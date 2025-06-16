@@ -4,3 +4,6 @@
 [submodule "sdk"]
 	path = sdk
 	url = git@github.com:lilka-dev/sdk.git
+[submodule "firmware/KeiraOS"]
+	path = firmware/KeiraOS
+	url = git@github.com:lilka-dev/KeiraOS.git
