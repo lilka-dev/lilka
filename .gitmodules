@@ -7,3 +7,6 @@
 [submodule "firmware/KeiraOS"]
 	path = firmware/KeiraOS
 	url = git@github.com:lilka-dev/KeiraOS.git
+[submodule "firmware/doom"]
+	path = firmware/doom
+	url = git@github.com:lilka-dev/doom_port.git
