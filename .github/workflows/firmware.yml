@@ -51,41 +51,41 @@ jobs:
       #     name: keira-firmware
       #     path: ./firmware/keira/keira.bin
 
-  doom:
-    runs-on: ubuntu-latest
+  # doom:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive  # or 'true' for non-recursive
-          fetch-depth: 0         # fetch full history, required for submodules to work properly
-      - uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/pip
-            ~/.platformio/.cache
-            ./firmware/doom/.pio
-          key: ${{ runner.os }}-doom
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-      - name: Install PlatformIO Core
-        run: pip install --upgrade platformio
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #       with:
+  #         submodules: recursive  # or 'true' for non-recursive
+  #         fetch-depth: 0         # fetch full history, required for submodules to work properly
+  #     - uses: actions/cache@v3
+  #       with:
+  #         path: |
+  #           ~/.cache/pip
+  #           ~/.platformio/.cache
+  #           ./firmware/doom/.pio
+  #         key: ${{ runner.os }}-doom
+  #     - uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.9'
+  #     - name: Install PlatformIO Core
+  #       run: pip install --upgrade platformio
 
-      - name: Build PlatformIO Project
-        working-directory: ./firmware/doom
-        run: pio run -e v2
+  #     - name: Build PlatformIO Project
+  #       working-directory: ./firmware/doom
+  #       run: pio run -e v2
 
-      - name: Copy firmware
-        working-directory: ./firmware/doom
-        run: |
-          cp .pio/build/v2/firmware.bin doom.bin
+  #     - name: Copy firmware
+  #       working-directory: ./firmware/doom
+  #       run: |
+  #         cp .pio/build/v2/firmware.bin doom.bin
 
-      # - name: Upload firmware artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: doom-firmware
-      #     path: ./firmware/doom/doom.bin
+  #     # - name: Upload firmware artifact
+  #     #   uses: actions/upload-artifact@v4
+  #     #   with:
+  #     #     name: doom-firmware
+  #     #     path: ./firmware/doom/doom.bin
 
   # release:
   #   runs-on: ubuntu-latest

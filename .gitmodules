@@ -4,3 +4,6 @@
 [submodule "sdk"]
 	path = sdk
 	url = git@github.com:lilka-dev/sdk.git
+[submodule "firmware/doom"]
+	path = firmware/doom
+	url = git@github.com:lilka-dev/doom_port.git
