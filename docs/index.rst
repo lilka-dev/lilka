@@ -46,6 +46,8 @@
     hardware/index
     assembly/index
     programming/index
+    KeiraOS <https://docs.lilka.dev/projects/keira/>
+    SDK <https://docs.lilka.dev/projects/sdk/>
     case/index
     faq/index
     glossary
