@@ -66,6 +66,13 @@ def setup(app):
     app.add_message_catalog("sphinx", custom_locale_path)
 
 
+# -- Inter-project links -----------------------------------------------------
+extensions.append("sphinx.ext.intersphinx")
+intersphinx_mapping = {
+    "keira-uk": ("https://docs.lilka.dev/projects/keira/uk/latest/", None),
+    "sdk-uk": ("https://docs.lilka.dev/projects/sdk/uk/latest/", None),
+}
+
 # -- Toolbox -----------------------------------------------------------------
 
 extensions.append("sphinx_toolbox.sidebar_links")
@@ -88,7 +95,7 @@ hoverxref_role_types = {
 }
 
 # -- Images ------------------------------------------------------------------
-if os.name != 'nt': 
+if os.name != "nt":
     extensions.append("sphinxcontrib.images")
 
 # # -- Custom extensions -------------------------------------------------------

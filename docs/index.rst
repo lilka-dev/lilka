@@ -15,7 +15,7 @@
 
 Інший важливий фактор - це ціна: сумарна вартість всіх компонентів базового набору Лілки в Україні - близько 500-600 гривень.
 
-.. image:: ../_static/v21.jpg
+.. image:: ./_static/v21.jpg
    :alt: Лілка
    :align: center
    :width: 50%
@@ -64,7 +64,6 @@
     Головна документація <https://docs.lilka.dev>
     Документація KeiraOS <https://docs.lilka.dev/projects/keira/>
     Документація SDK <https://docs.lilka.dev/projects/sdk/>
-
 
     GitHub <https://github.com/lilka-dev/lilka>
     Discord <https://discord.gg/HU68TaKCu6>
