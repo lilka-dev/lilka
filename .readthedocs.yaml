@@ -19,9 +19,9 @@ build:
   #   pre_install:
   #     - bash -c "mkdir -p ~/.config/kicad/7.0/colors && cp ./docs/assets/kicad/colors/Dark.json ~/.config/kicad/7.0/colors/Dark.json"
   #     - make -C docs gen
-  jobs:
-    pre_install:
-      - make -C docs doxygen
+  # jobs:
+  #   pre_install:
+  #     - make -C docs doxygen
 
 submodules:
   include: all
