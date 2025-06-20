@@ -72,6 +72,7 @@ intersphinx_mapping = {
     "keira-uk": ("https://docs.lilka.dev/projects/keira/uk/latest/", None),
     "sdk-uk": ("https://docs.lilka.dev/projects/sdk/uk/latest/", None),
 }
+intersphinx_disabled_reftypes = ["*"]
 
 # -- Toolbox -----------------------------------------------------------------
 
