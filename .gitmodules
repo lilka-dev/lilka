@@ -1,9 +1,0 @@
-[submodule "sdk"]
-	path = sdk
-	url = https://github.com/lilka-dev/sdk.git
-[submodule "firmware/keiraos"]
-	path = firmware/keira
-	url = https://github.com/lilka-dev/keira.git
-[submodule "firmware/doom"]
-	path = firmware/doom
-	url = https://github.com/lilka-dev/doom_port.git
