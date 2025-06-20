@@ -23,6 +23,9 @@ build:
     pre_install:
       - make -C docs doxygen
 
+submodules:
+  include: all
+
 sphinx:
   configuration: docs/conf.py
   builder: dirhtml
