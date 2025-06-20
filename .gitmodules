@@ -1,12 +1,12 @@
 [submodule "hardware"]
 	path = hardware
-	url = git@github.com:lilka-dev/hardware.git
+	url = https://github.com/lilka-dev/hardware.git
 [submodule "sdk"]
 	path = sdk
-	url = git@github.com:lilka-dev/sdk.git
+	url = https://github.com/lilka-dev/sdk.git
 [submodule "firmware/keiraos"]
 	path = firmware/keira
-	url = git@github.com:lilka-dev/keira.git
+	url = https://github.com/lilka-dev/keira.git
 [submodule "firmware/doom"]
 	path = firmware/doom
-	url = git@github.com:lilka-dev/doom_port.git
+	url = https://github.com/lilka-dev/doom_port.git
