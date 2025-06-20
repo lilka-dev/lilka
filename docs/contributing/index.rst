@@ -6,4 +6,5 @@
 
     reporting
     tasks
-    todos
+
+    .. todos

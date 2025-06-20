@@ -66,30 +66,6 @@ def setup(app):
     app.add_message_catalog("sphinx", custom_locale_path)
 
 
-# -- Breathe configuration ---------------------------------------------------
-
-extensions.append("breathe")
-
-breathe_projects = {
-    "lilka": "./_doxygen/xml",
-}
-breathe_default_project = "lilka"
-
-primary_domain = "cpp"
-
-highlight_language = "cpp"
-
-# -- Lua ---------------------------------------------------------------------
-
-extensions.append("sphinxcontrib.luadomain")
-extensions.append("sphinx_lua")
-
-lua_source_path = ["../sdk/addons/lualilka/"]
-lua_source_encoding = "utf8"
-lua_source_comment_prefix = "---"
-lua_source_use_emmy_lua_syntax = True
-lua_source_private_prefix = "_"
-
 # -- Toolbox -----------------------------------------------------------------
 
 extensions.append("sphinx_toolbox.sidebar_links")
@@ -115,7 +91,7 @@ hoverxref_role_types = {
 if os.name != 'nt': 
     extensions.append("sphinxcontrib.images")
 
-# -- Custom extensions -------------------------------------------------------
-sys.path.append("./extensions/")
-
-extensions.append("todos")
+# # -- Custom extensions -------------------------------------------------------
+# sys.path.append("./extensions/")
+#
+# extensions.append("todos")
