@@ -285,6 +285,27 @@
         .product-card.black:hover { border-color: rgba(148, 163, 184, 0.4); box-shadow: 0 16px 48px rgba(148, 163, 184, 0.1); }
         .product-card.red:hover   { border-color: rgba(239, 68, 68, 0.4); box-shadow: 0 16px 48px rgba(239, 68, 68, 0.1); }
 
+        /* ── Or-divider ── */
+        .or-divider {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            margin: 2.5rem 0 0;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--color-border);
+        }
+
         /* ── Info cards ── */
         .info-card {
             display: flex;
@@ -468,6 +489,20 @@
                 <a href="https://imrad.com.ua/ua/search/kategoriya=komplekti-rozrobki-inshe?searchkeywords=%D0%9B%D0%86%D0%9B%D0%9A%D0%90" class="product-card">
                     <img src="./imrad.jpg" alt="Всі набори на imrad.com.ua" />
                     <span class="product-name">Всі набори на imrad.com.ua</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Alternative — arduino.ua -->
+        <div class="or-divider">або</div>
+
+        <div class="shop-section" style="margin-top: 1.5rem;">
+            <div class="section-label">🛒 Альтернативний магазин</div>
+            <h2>Купити на arduino.ua</h2>
+            <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                <a href="https://arduino.ua/prod8202-diy-konsol-lilka-na-bazi-esp32-s3-wroom-1u-n16r8-k372" class="product-card">
+                    <img src="./arduino_ua.webp" alt="DIY-консоль Лілка на arduino.ua" />
+                    <span class="product-name">DIY-консоль Лілка (K372)</span>
                 </a>
             </div>
         </div>
