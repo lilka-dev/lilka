@@ -1,278 +1,604 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 
 <head>
-    <title>Лілка: DIY-консоль для ентузіастів</title>
+    <title>Лілка — DIY-консоль для ентузіастів</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Лілка — українська DIY-консоль на базі ESP32-S3 для навчання, творчості та розваг." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="/static/favicon.ico" />
 
-    <style type="text/css">
-        * {
+    <style>
+        *, *::before, *::after {
             box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
             margin: 0;
             padding: 0;
         }
 
-        .background {
-            background: url('./static/lilka_v21.jpg') no-repeat center center;
-            background-size: cover;
-            height: 100%;
-            width: 100%;
-            font-family: "Roboto", sans-serif;
+        :root {
+            --color-bg: #0a0a0f;
+            --color-surface: rgba(255, 255, 255, 0.04);
+            --color-surface-hover: rgba(255, 255, 255, 0.08);
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-border-hover: rgba(255, 255, 255, 0.16);
+            --color-text: #f0f0f5;
+            --color-text-muted: #8888a0;
+            --color-accent: #7c5cff;
+            --color-accent-glow: rgba(124, 92, 255, 0.4);
+            --color-green: #22c55e;
+            --color-pink: #ec4899;
+            --color-cyan: #06b6d4;
+            --color-orange: #f59e0b;
+            --radius-lg: 1rem;
+            --radius-xl: 1.25rem;
         }
 
-        .content {
-            background-color: rgba(0, 0, 0, 0.9);
-            height: 100%;
-            width: 100%;
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Animated background ── */
+        .bg-gradient {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .bg-gradient .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.35;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .bg-gradient .orb:nth-child(1) {
+            width: 600px; height: 600px;
+            background: var(--color-accent);
+            top: -10%; left: -10%;
+            animation-delay: 0s;
+        }
+
+        .bg-gradient .orb:nth-child(2) {
+            width: 500px; height: 500px;
+            background: var(--color-pink);
+            bottom: -15%; right: -10%;
+            animation-delay: -7s;
+        }
+
+        .bg-gradient .orb:nth-child(3) {
+            width: 400px; height: 400px;
+            background: var(--color-cyan);
+            top: 40%; left: 50%;
+            animation-delay: -14s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(60px, -40px) scale(1.1); }
+            66% { transform: translate(-40px, 30px) scale(0.95); }
+        }
+
+        /* ── Noise texture overlay ── */
+        .bg-gradient::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        /* ── Layout ── */
+        .page {
+            position: relative;
+            z-index: 1;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
             flex-direction: column;
-        }
-
-        .soon {
-            text-align: center;
-            margin-bottom: 4em;
-        }
-
-        .title {
-            font-size: 5em;
-            font-weight: 300;
-        }
-
-        .title .glow {
-            animation: glow 2s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 20px hsl(0, 100%, 50%);
-                color: hsl(0, 100%, 90%);
-            }
-
-            33% {
-                text-shadow: 0 0 20px hsl(120, 100%, 50%);
-                color: hsl(120, 100%, 90%);
-            }
-
-            66% {
-                text-shadow: 0 0 20px hsl(240, 100%, 50%);
-                color: hsl(240, 100%, 90%);
-            }
-
-            100% {
-                text-shadow: 0 0 20px hsl(360, 100%, 50%);
-                color: hsl(360, 100%, 90%);
-            }
-        }
-
-        .sub {
-            font-size: 3em;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        }
-
-        .badges {
-            display: flex;
-            justify-content: center;
             align-items: center;
-            flex-direction: row;
-            gap: 1em;
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 0 4rem;
+            max-width: 720px;
+            animation: fadeUp 0.8s ease-out both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border-radius: 100px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(12px);
+        }
+
+        .hero-badge .dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--color-green);
+            box-shadow: 0 0 8px var(--color-green);
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 .accent {
+            background: linear-gradient(135deg, var(--color-accent), var(--color-pink), var(--color-cyan));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 4s ease-in-out infinite;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: 400;
+            color: var(--color-text-muted);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        /* ── CTA buttons ── */
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.85rem 1.8rem;
+            border-radius: var(--radius-lg);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn svg {
+            width: 1.2em; height: 1.2em;
+            flex-shrink: 0;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-accent), #9b7bff);
+            color: #fff;
+            box-shadow: 0 4px 24px var(--color-accent-glow), inset 0 1px 0 rgba(255,255,255,0.15);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px var(--color-accent-glow), inset 0 1px 0 rgba(255,255,255,0.2);
+        }
+
+        .btn-secondary {
+            background: var(--color-surface);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+            backdrop-filter: blur(12px);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-surface-hover);
+            border-color: var(--color-border-hover);
+            transform: translateY(-2px);
+        }
+
+        /* ── Hero image ── */
+        .hero-image {
+            margin-top: 3rem;
+            width: 100%;
+            max-width: 480px;
+            animation: fadeUp 1s ease-out 0.3s both;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--color-border);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 60px var(--color-accent-glow);
+        }
+
+        /* ── Section ── */
+        .section {
+            width: 100%;
+            max-width: 900px;
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-accent);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* ── Link cards grid ── */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem 1.5rem;
+            border-radius: var(--radius-xl);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            backdrop-filter: blur(16px);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: all 0.3s ease;
+            animation: fadeUp 0.6s ease-out both;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.15s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.25s; }
+        .card:nth-child(5) { animation-delay: 0.3s; }
+
+        .card:hover {
+            background: var(--color-surface-hover);
+            border-color: var(--color-border-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-icon {
+            width: 48px; height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .card-icon svg {
+            width: 24px; height: 24px;
+        }
+
+        .card-icon.shop     { background: linear-gradient(135deg, #22c55e, #16a34a); }
+        .card-icon.catalog   { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+        .card-icon.discord   { background: linear-gradient(135deg, #5865F2, #4752c4); }
+        .card-icon.youtube   { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        .card-icon.docs      { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .card-label {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .card-desc {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-top: 0.15rem;
+        }
+
+        .card-arrow {
+            margin-left: auto;
+            color: var(--color-text-muted);
+            transition: transform 0.25s ease, color 0.25s ease;
+            flex-shrink: 0;
+        }
+
+        .card-arrow svg {
+            width: 18px; height: 18px;
+        }
+
+        .card:hover .card-arrow {
+            transform: translateX(4px);
+            color: var(--color-text);
+        }
+
+        /* ── Featured cards (Shop & Catalog) ── */
+        .cards-featured {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
             margin-bottom: 1rem;
         }
 
-        .badge {
-            display: block;
+        .card-featured {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.5rem 1.75rem;
+            border-radius: var(--radius-xl);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            backdrop-filter: blur(16px);
             text-decoration: none;
-            display: block;
-            background-color: #444444;
-            color: #FFFFFF;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            color: var(--color-text);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease-out both;
         }
 
-        .badge .left,
-        .badge .right {
-            padding: 0.5em;
-            font-size: 1em;
-            text-transform: uppercase;
+        .card-featured::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: inherit;
         }
 
-        .badge .left {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+        .card-featured.shop-card::before {
+            background: linear-gradient(135deg, rgba(34,197,94,0.08), transparent);
         }
 
-        .badge .left .icon {
-            width: 1.5em;
-            height: 1.5em;
-            padding-right: 0.5em;
-            color: white;
-            display: flex;
-            vertical-align: middle;
+        .card-featured.catalog-card::before {
+            background: linear-gradient(135deg, rgba(168,85,247,0.08), transparent);
         }
 
-        .badge .left .title {
-            font-size: 1em;
-            font-weight: 700;
+        .card-featured:hover::before {
+            opacity: 1;
         }
 
-        .badge .right {
-            font-weight: 300;
+        .card-featured:hover {
+            border-color: var(--color-border-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
         }
 
-        .badge.discord .icon,
-        .badge.discord .left {
-            background-color: #4400AA;
+        .card-featured .card-icon {
+            width: 56px; height: 56px;
+            border-radius: 14px;
         }
 
-        .badge.youtube .icon,
-        .badge.youtube .left {
-            background-color: #AA0000;
+        .card-featured .card-icon svg {
+            width: 28px; height: 28px;
         }
 
-        .badge.readthedocs .icon,
-        .badge.readthedocs .left {
-            background-color: #297FB9;
+        .card-featured .card-label {
+            font-size: 1.15rem;
         }
 
-        .badge.catalog .icon,
-        .badge.catalog .left {
-            background-color: #8B00CC;
+        .card-featured .card-desc {
+            font-size: 0.9rem;
         }
 
-        .badge.shop .icon,
-        .badge.shop .left {
-            background-color: #00AA55;
+        /* ── Footer ── */
+        .footer {
+            margin-top: auto;
+            padding: 3rem 0 2rem;
+            text-align: center;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
         }
 
-        .badge-big {
-            font-size: 1.5rem;
+        .footer a {
+            color: var(--color-accent);
+            text-decoration: none;
         }
 
-        @media (max-width: 800px) {
-            .title {
-                font-size: 3em;
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .page {
+                padding: 1rem;
             }
 
-            .sub {
-                font-size: 2em;
+            .hero {
+                padding: 3rem 0 2rem;
             }
 
-            .badges {
-                width: 100%;
-                padding: 0 2rem;
-                flex-direction: column;
-            }
-
-            .badge {
+            .hero-actions {
                 flex-direction: column;
                 width: 100%;
             }
 
-            .badge .left,
-            .badge .right {
+            .btn {
+                justify-content: center;
                 width: 100%;
+            }
+
+            .cards-featured {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="background">
-        <div class="content">
-            <div class="soon">
-                <div class="title">Лілка <span class="glow">v2</span></div>
-                <div class="sub">Вже тут!</div>
-            </div>
 
-            <div class="badges">
-                <a href="/shop" class="badge shop badge-big">
-                    <div class="left">
-                        <div class="icon">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>Магазин</title>
-                                <path fill="white" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zM1 2v2h2l3.6 7.59l-1.35 2.45c-.16.28-.25.61-.25.96c0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2z"/>
-                            </svg>
-                        </div>
-                        <div class="title">Магазин</div>
-                    </div>
-                    <div class="right">Купити Лілку</div>
-                </a>
-            </div>
-            <div class="badges">
-                <a href="https://catalog.lilka.dev/" class="badge catalog badge-big">
-                    <div class="left">
-                        <div class="icon">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>Каталог</title>
-                                <path fill="white" d="M6 11.5V6h5.5v5.5H6ZM6 18v-5.5h5.5V18H6Zm6.5-6.5V6H18v5.5h-5.5Zm0 6.5v-5.5H18V18h-5.5ZM8 9.5h1.5V8H8v1.5Zm6.5 0H16V8h-1.5v1.5ZM8 16h1.5v-1.5H8V16Zm6.5 0H16v-1.5h-1.5V16Zm-5-6.5Zm5 0Zm0 5Zm-5 0ZM5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm0-2h14V5H5v14Z"/>
-                            </svg>
-                        </div>
-                        <div class="title">Каталог</div>
-                    </div>
-                    <div class="right">Додатків</div>
-                </a>
-            </div>
-            <div class="badges">
-                <a href="https://discord.gg/ycmaz4vnbs" class="badge discord">
-                    <div class="left">
-                        <div class="icon">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>Discord</title>
-                                <path fill="white"
-                                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-                            </svg>
-                        </div>
-                        <div class="title">Discord</div>
-                    </div>
-                    <div class="right">Приєднуйтесь до дискусії</div>
-                </a>
-
-                <a href="https://youtu.be/6Tz70vqRrs0?si=fLhjktC660w-Vw-n" class="badge youtube">
-                    <div class="left">
-                        <div class="icon">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>YouTube</title>
-                                <path fill="white"
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg>
-                        </div>
-                        <div class="title">YouTube</div>
-                    </div>
-                    <div class="right">Відео про проєкт</div>
-                </a>
-
-                <a href="https://docs.lilka.dev" class="badge readthedocs">
-                    <div class="left">
-                        <div class="icon">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>Документація</title>
-                                <path fill="white" d="M7.5 22q-1.45 0-2.475-1.025T4 18.5v-13q0-1.45 1.025-2.475T7.5 2H20v15q-.625 0-1.063.438T18.5 18.5q0 .625.438 1.063T20 20v2H7.5ZM6 15.325q.35-.175.725-.25T7.5 15H8V4h-.5q-.625 0-1.063.438T6 5.5v9.825ZM10 15h8V4h-8v11Zm-4 .325V4v11.325ZM7.5 20h9.325q-.15-.35-.237-.713T16.5 18.5q0-.4.075-.775t.25-.725H7.5q-.65 0-1.075.438T6 18.5q0 .65.425 1.075T7.5 20Z"/>
-                            </svg>
-                        </div>
-                        <div class="title">Документація</div>
-                    </div>
-                    <div class="right">Read The Docs</div>
-                </a>
-            </div>
-        </div>
+    <!-- Animated background -->
+    <div class="bg-gradient">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
     </div>
+
+    <div class="page">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                DIY-консоль на базі ESP32-S3
+            </div>
+            <h1>Лілка <span class="accent">v2</span></h1>
+            <p class="subtitle">Українська open-source консоль для навчання, творчості та розваг. Збери, запрограмуй, грай!</p>
+            <div class="hero-actions">
+                <a href="/shop" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    Купити Лілку
+                </a>
+                <a href="https://docs.lilka.dev" class="btn btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    Документація
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="./static/lilka_v21.jpg" alt="Лілка v2 — DIY-консоль" loading="lazy" />
+            </div>
+        </section>
+
+        <!-- Featured links -->
+        <section class="section">
+            <div class="section-title">Почніть тут</div>
+            <div class="cards-featured">
+                <a href="/shop" class="card-featured shop-card">
+                    <div class="card-icon shop">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-label">Магазин</span>
+                        <span class="card-desc">Придбати набір для збору Лілки</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+                <a href="https://catalog.lilka.dev/" class="card-featured catalog-card">
+                    <div class="card-icon catalog">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-label">Каталог додатків</span>
+                        <span class="card-desc">Ігри, програми та приклади</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Community & Resources -->
+        <section class="section">
+            <div class="section-title">Спільнота та ресурси</div>
+            <div class="cards">
+                <a href="https://discord.gg/ycmaz4vnbs" class="card">
+                    <div class="card-icon discord">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-label">Discord</span>
+                        <span class="card-desc">Приєднуйтесь до дискусії</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+                <a href="https://youtu.be/6Tz70vqRrs0?si=fLhjktC660w-Vw-n" class="card">
+                    <div class="card-icon youtube">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-label">YouTube</span>
+                        <span class="card-desc">Відео про проєкт</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+                <a href="https://docs.lilka.dev" class="card">
+                    <div class="card-icon docs">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-label">Документація</span>
+                        <span class="card-desc">Повний опис та інструкції</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Лілка — open-source проєкт · <a href="https://github.com/and3rson/lilka">GitHub</a></p>
+        </footer>
+
+    </div>
+
 </body>
 
 </html>
