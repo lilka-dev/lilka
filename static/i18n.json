@@ -1,0 +1,222 @@
+{
+  "home": {
+    "meta.title": {
+      "uk": "Лілка — DIY-консоль для ентузіастів",
+      "en": "Lilka — DIY Console for Enthusiasts"
+    },
+    "meta.description": {
+      "uk": "Лілка — українська DIY-консоль на базі ESP32-S3 для навчання, творчості та розваг.",
+      "en": "Lilka is a Ukrainian ESP32-S3 based DIY console for learning, creativity, and fun."
+    },
+    "hero.badge": {
+      "uk": "DIY-консоль на базі ESP32-S3",
+      "en": "DIY console based on ESP32-S3"
+    },
+    "hero.subtitle": {
+      "uk": "Українська open-source консоль для навчання, творчості та розваг. Збери, запрограмуй, грай!",
+      "en": "Ukrainian open-source console for learning, creativity, and fun. Build it, code it, play it!"
+    },
+    "hero.buy": {
+      "uk": "Купити Лілку",
+      "en": "Buy Lilka"
+    },
+    "hero.docs": {
+      "uk": "Документація",
+      "en": "Documentation"
+    },
+    "hero.imageAlt": {
+      "uk": "Лілка v2 — DIY-консоль",
+      "en": "Lilka v2 — DIY console"
+    },
+    "start.title": {
+      "uk": "Почніть тут",
+      "en": "Start Here"
+    },
+    "featured.shop.label": {
+      "uk": "Магазин",
+      "en": "Shop"
+    },
+    "featured.shop.desc": {
+      "uk": "Придбати набір для збору Лілки",
+      "en": "Get a Lilka assembly kit"
+    },
+    "featured.catalog.label": {
+      "uk": "Каталог додатків",
+      "en": "App Catalog"
+    },
+    "featured.catalog.desc": {
+      "uk": "Ігри, програми та приклади",
+      "en": "Games, apps, and examples"
+    },
+    "community.title": {
+      "uk": "Спільнота та ресурси",
+      "en": "Community & Resources"
+    },
+    "community.discord.desc": {
+      "uk": "Приєднуйтесь до дискусії",
+      "en": "Join the discussion"
+    },
+    "community.youtube.desc": {
+      "uk": "Відео про проєкт",
+      "en": "Project videos"
+    },
+    "community.docs.label": {
+      "uk": "Документація",
+      "en": "Documentation"
+    },
+    "community.docs.desc": {
+      "uk": "Повний опис та інструкції",
+      "en": "Full guide and instructions"
+    },
+    "footer.text": {
+      "uk": "Лілка — open-source проєкт · <a href=\"https://github.com/and3rson/lilka\" data-umami-event=\"click-github\">GitHub</a>",
+      "en": "Lilka is an open-source project · <a href=\"https://github.com/and3rson/lilka\" data-umami-event=\"click-github\">GitHub</a>"
+    }
+  },
+  "shop": {
+    "meta.title": {
+      "uk": "Купити Лілку",
+      "en": "Buy Lilka"
+    },
+    "nav.home": {
+      "uk": "← Лілка",
+      "en": "← Lilka"
+    },
+    "nav.current": {
+      "uk": "Магазин",
+      "en": "Shop"
+    },
+    "header.title": {
+      "uk": "Отже, ви вирішили придбати Лілку! 🐱",
+      "en": "So, you decided to buy Lilka! 🐱"
+    },
+    "header.p1": {
+      "uk": "Лілка складається з декількох окремих наборів. Що таке Лілка? Повний опис проєкту та всю документацію <a href=\"https://docs.lilka.dev/uk/latest/about/\" data-umami-event=\"click-about-docs\">ви можете прочитати тут</a>. Відео, з якого <a href=\"https://www.youtube.com/watch?v=6Tz70vqRrs0\" data-umami-event=\"click-intro-video\">все почалось</a>.",
+      "en": "Lilka consists of several separate kits. What is Lilka? You can find the full project description and documentation <a href=\"https://docs.lilka.dev/en/latest/about/\" data-umami-event=\"click-about-docs\">here</a>. The video where it all started is <a href=\"https://www.youtube.com/watch?v=6Tz70vqRrs0\" data-umami-event=\"click-intro-video\">here</a>."
+    },
+    "header.p2": {
+      "uk": "Що це за комплекти? <a href=\"https://docs.lilka.dev/uk/latest/assembly/configurations/\" data-umami-event=\"click-configurations\">Детальніше про них можна почитати тут</a>.",
+      "en": "What are these kits? <a href=\"https://docs.lilka.dev/en/latest/assembly/configurations/\" data-umami-event=\"click-configurations\">Read more about them here</a>."
+    },
+    "step1.label": {
+      "uk": "Крок перший",
+      "en": "Step one"
+    },
+    "step1.title": {
+      "uk": "Оберіть базовий комплект",
+      "en": "Choose a base kit"
+    },
+    "product.blue": {
+      "uk": "Синя Лілка",
+      "en": "Blue Lilka"
+    },
+    "product.green": {
+      "uk": "Зелена Лілка",
+      "en": "Green Lilka"
+    },
+    "product.black": {
+      "uk": "Чорна Лілка",
+      "en": "Black Lilka"
+    },
+    "product.red": {
+      "uk": "Червона Лілка",
+      "en": "Red Lilka"
+    },
+    "step2.label": {
+      "uk": "Крок другий",
+      "en": "Step two"
+    },
+    "step2.title": {
+      "uk": "Додаткові комплекти (за бажанням)",
+      "en": "Additional kits (optional)"
+    },
+    "product.battery": {
+      "uk": "Комплект для акумулятора",
+      "en": "Battery kit"
+    },
+    "product.sound": {
+      "uk": "Комплект для звуку",
+      "en": "Sound kit"
+    },
+    "product.imradAll": {
+      "uk": "Всі набори на imrad.com.ua",
+      "en": "All kits on imrad.com.ua"
+    },
+    "or": {
+      "uk": "або",
+      "en": "or"
+    },
+    "altShop.label": {
+      "uk": "🛒 Альтернативний магазин",
+      "en": "🛒 Alternative shop"
+    },
+    "altShop.title": {
+      "uk": "Купити на arduino.ua",
+      "en": "Buy on arduino.ua"
+    },
+    "product.arduino": {
+      "uk": "DIY-консоль Лілка (K372)",
+      "en": "DIY Lilka Console (K372)"
+    },
+    "step3.label": {
+      "uk": "Крок третій",
+      "en": "Step three"
+    },
+    "step3.title": {
+      "uk": "Інструкція зі збору",
+      "en": "Assembly instructions"
+    },
+    "assembly.title": {
+      "uk": "Інструкція зі збору Лілки",
+      "en": "Lilka assembly instructions"
+    },
+    "assembly.desc": {
+      "uk": "Покроковий гайд з фото та відео",
+      "en": "Step-by-step guide with photos and video"
+    },
+    "diy.label": {
+      "uk": "🛠️ Для мейкерів",
+      "en": "🛠️ For makers"
+    },
+    "diy.title": {
+      "uk": "Хочете зробити все з нуля?",
+      "en": "Want to build everything from scratch?"
+    },
+    "diy.pcb.title": {
+      "uk": "Креслення друкованих плат",
+      "en": "PCB schematics"
+    },
+    "diy.pcb.desc": {
+      "uk": "KiCad-файли на GitHub",
+      "en": "KiCad files on GitHub"
+    },
+    "diy.bom.title": {
+      "uk": "Перелік деталей (BOM)",
+      "en": "Bill of materials (BOM)"
+    },
+    "diy.bom.desc": {
+      "uk": "Повний список необхідних компонентів",
+      "en": "Full list of required components"
+    },
+    "community.label": {
+      "uk": "💬 Спільнота",
+      "en": "💬 Community"
+    },
+    "community.title": {
+      "uk": "Питання? Проблеми? Побажання?",
+      "en": "Questions? Issues? Suggestions?"
+    },
+    "community.discord.title": {
+      "uk": "Приєднуйтесь до нашого Discord",
+      "en": "Join our Discord"
+    },
+    "community.discord.desc": {
+      "uk": "Спільнота ентузіастів та розробників",
+      "en": "Community of enthusiasts and developers"
+    },
+    "footer.back": {
+      "uk": "← Повернутися на головну",
+      "en": "← Back to home"
+    }
+  }
+}

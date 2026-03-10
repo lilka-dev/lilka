@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Купити Лілку</title>
+    <title data-i18n="meta.title">Купити Лілку</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -130,6 +130,29 @@
 
         .nav .current {
             color: var(--color-text);
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 20;
+            background: var(--color-surface);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+            border-radius: 999px;
+            padding: 0.45rem 0.8rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(12px);
+        }
+
+        .lang-switch:hover {
+            background: var(--color-surface-hover);
+            border-color: var(--color-border-hover);
         }
 
         @keyframes fadeUp {
@@ -419,7 +442,7 @@
     </style>
 </head>
 
-<body>
+<body data-i18n-page="shop">
 
     <div class="bg-gradient">
         <div class="orb"></div>
@@ -430,79 +453,80 @@
 
         <!-- Navigation -->
         <nav class="nav">
-            <a href="/" data-umami-event="click-nav-home">← Лілка</a>
+            <a href="/" data-umami-event="click-nav-home" data-i18n="nav.home">← Лілка</a>
             <span class="sep">/</span>
-            <span class="current">Магазин</span>
+            <span class="current" data-i18n="nav.current">Магазин</span>
+            <button type="button" class="lang-switch" data-lang-switch aria-label="Switch language">🇬🇧 EN</button>
         </nav>
 
         <!-- Header -->
         <div class="shop-header">
             <img src="./lilka_imrad.png" alt="Лілка" />
-            <h1>Отже, ви вирішили придбати Лілку! 🐱</h1>
-            <p>
+            <h1 data-i18n="header.title">Отже, ви вирішили придбати Лілку! 🐱</h1>
+            <p data-i18n-html="header.p1">
                 Лілка складається з декількох окремих наборів.
                 Що таке Лілка? Повний опис проєкту та всю документацію <a href="https://docs.lilka.dev/uk/latest/about/" data-umami-event="click-about-docs">ви можете прочитати тут</a>.
                 Відео, з якого <a href="https://www.youtube.com/watch?v=6Tz70vqRrs0" data-umami-event="click-intro-video">все почалось</a>.
             </p>
-            <p style="margin-top: 0.75rem;">
+            <p style="margin-top: 0.75rem;" data-i18n-html="header.p2">
                 Що це за комплекти? <a href="https://docs.lilka.dev/uk/latest/assembly/configurations/" data-umami-event="click-configurations">Детальніше про них можна почитати тут</a>.
             </p>
         </div>
 
         <!-- Step 1 — Base kits -->
         <div class="shop-section">
-            <div class="section-label"><span class="step">1</span> Крок перший</div>
-            <h2>Оберіть базовий комплект</h2>
+            <div class="section-label"><span class="step">1</span> <span data-i18n="step1.label">Крок перший</span></div>
+            <h2 data-i18n="step1.title">Оберіть базовий комплект</h2>
             <div class="product-grid">
                 <a href="https://imrad.com.ua/ua/konsol-lilka-na-esp32-s3-baza-1-komplekt-24345" class="product-card blue" data-umami-event="click-product-blue">
                     <img src="./blue.jpg" alt="Синя Лілка" />
-                    <span class="product-name">Синя Лілка</span>
+                    <span class="product-name" data-i18n="product.blue">Синя Лілка</span>
                 </a>
                 <a href="https://imrad.com.ua/ua/konsol-lilka-na-esp32-s3-baza-2-komplekt-24352" class="product-card green" data-umami-event="click-product-green">
                     <img src="./green.jpg" alt="Зелена Лілка" />
-                    <span class="product-name">Зелена Лілка</span>
+                    <span class="product-name" data-i18n="product.green">Зелена Лілка</span>
                 </a>
                 <a href="https://imrad.com.ua/ua/konsol-lilka-na-esp32-s3-baza-3-komplekt-24353" class="product-card black" data-umami-event="click-product-black">
                     <img src="./black.jpg" alt="Чорна Лілка" />
-                    <span class="product-name">Чорна Лілка</span>
+                    <span class="product-name" data-i18n="product.black">Чорна Лілка</span>
                 </a>
                 <a href="https://imrad.com.ua/ua/konsol-lilka-na-esp32-s3-baza-4-komplekt-24354" class="product-card red" data-umami-event="click-product-red">
                     <img src="./red.jpg" alt="Червона Лілка" />
-                    <span class="product-name">Червона Лілка</span>
+                    <span class="product-name" data-i18n="product.red">Червона Лілка</span>
                 </a>
             </div>
         </div>
 
         <!-- Step 2 — Additional kits -->
         <div class="shop-section">
-            <div class="section-label"><span class="step">2</span> Крок другий</div>
-            <h2>Додаткові комплекти (за бажанням)</h2>
+            <div class="section-label"><span class="step">2</span> <span data-i18n="step2.label">Крок другий</span></div>
+            <h2 data-i18n="step2.title">Додаткові комплекти (за бажанням)</h2>
             <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
                 <a href="https://imrad.com.ua/ua/dlya-akkumulyatora-lilka-komplekt-dlya-sborki-24347" class="product-card" data-umami-event="click-product-battery">
                     <img src="./battery.jpg" alt="Комплект для акумулятора" />
-                    <span class="product-name">Комплект для акумулятора</span>
+                    <span class="product-name" data-i18n="product.battery">Комплект для акумулятора</span>
                 </a>
                 <a href="https://imrad.com.ua/ua/dlya-zvuk-lilka-komplekt-24346" class="product-card" data-umami-event="click-product-sound">
                     <img src="./sound.jpg" alt="Комплект для звуку" />
-                    <span class="product-name">Комплект для звуку</span>
+                    <span class="product-name" data-i18n="product.sound">Комплект для звуку</span>
                 </a>
                 <a href="https://imrad.com.ua/ua/search/kategoriya=komplekti-rozrobki-inshe?searchkeywords=%D0%9B%D0%86%D0%9B%D0%9A%D0%90" class="product-card" data-umami-event="click-product-imrad-all">
                     <img src="./imrad.jpg" alt="Всі набори на imrad.com.ua" />
-                    <span class="product-name">Всі набори на imrad.com.ua</span>
+                    <span class="product-name" data-i18n="product.imradAll">Всі набори на imrad.com.ua</span>
                 </a>
             </div>
         </div>
 
         <!-- Alternative — arduino.ua -->
-        <div class="or-divider">або</div>
+        <div class="or-divider" data-i18n="or">або</div>
 
         <div class="shop-section" style="margin-top: 1.5rem;">
-            <div class="section-label">🛒 Альтернативний магазин</div>
-            <h2>Купити на arduino.ua</h2>
+            <div class="section-label" data-i18n="altShop.label">🛒 Альтернативний магазин</div>
+            <h2 data-i18n="altShop.title">Купити на arduino.ua</h2>
             <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
                 <a href="https://arduino.ua/prod8202-diy-konsol-lilka-na-bazi-esp32-s3-wroom-1u-n16r8-k372" class="product-card" data-umami-event="click-product-arduino-ua">
                     <img src="./arduino_ua.webp" alt="DIY-консоль Лілка на arduino.ua" />
-                    <span class="product-name">DIY-консоль Лілка (K372)</span>
+                    <span class="product-name" data-i18n="product.arduino">DIY-консоль Лілка (K372)</span>
                 </a>
             </div>
         </div>
@@ -511,15 +535,15 @@
 
         <!-- Step 3 — Assembly instructions -->
         <div class="shop-section">
-            <div class="section-label"><span class="step">3</span> Крок третій</div>
-            <h2>Інструкція зі збору</h2>
+            <div class="section-label"><span class="step">3</span> <span data-i18n="step3.label">Крок третій</span></div>
+            <h2 data-i18n="step3.title">Інструкція зі збору</h2>
             <a href="https://docs.lilka.dev/uk/latest/assembly/" class="info-card" data-umami-event="click-assembly-instructions">
                 <div class="info-icon green">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                 </div>
                 <div class="info-body">
-                    <div class="info-title">Інструкція зі збору Лілки</div>
-                    <div class="info-desc">Покроковий гайд з фото та відео</div>
+                    <div class="info-title" data-i18n="assembly.title">Інструкція зі збору Лілки</div>
+                    <div class="info-desc" data-i18n="assembly.desc">Покроковий гайд з фото та відео</div>
                 </div>
                 <div class="info-arrow">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -529,15 +553,15 @@
 
         <!-- DIY section -->
         <div class="shop-section">
-            <div class="section-label">🛠️ Для мейкерів</div>
-            <h2>Хочете зробити все з нуля?</h2>
+            <div class="section-label" data-i18n="diy.label">🛠️ Для мейкерів</div>
+            <h2 data-i18n="diy.title">Хочете зробити все з нуля?</h2>
             <a href="https://github.com/and3rson/lilka/tree/main/hardware/v2/v23" class="info-card" data-umami-event="click-pcb-schematics">
                 <div class="info-icon purple">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 7h10"/><path d="M7 12h10"/><path d="M7 17h6"/></svg>
                 </div>
                 <div class="info-body">
-                    <div class="info-title">Креслення друкованих плат</div>
-                    <div class="info-desc">KiCad-файли на GitHub</div>
+                    <div class="info-title" data-i18n="diy.pcb.title">Креслення друкованих плат</div>
+                    <div class="info-desc" data-i18n="diy.pcb.desc">KiCad-файли на GitHub</div>
                 </div>
                 <div class="info-arrow">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -548,8 +572,8 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
                 </div>
                 <div class="info-body">
-                    <div class="info-title">Перелік деталей (BOM)</div>
-                    <div class="info-desc">Повний список необхідних компонентів</div>
+                    <div class="info-title" data-i18n="diy.bom.title">Перелік деталей (BOM)</div>
+                    <div class="info-desc" data-i18n="diy.bom.desc">Повний список необхідних компонентів</div>
                 </div>
                 <div class="info-arrow">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -559,8 +583,8 @@
 
         <!-- Community -->
         <div class="shop-section">
-            <div class="section-label">💬 Спільнота</div>
-            <h2>Питання? Проблеми? Побажання?</h2>
+            <div class="section-label" data-i18n="community.label">💬 Спільнота</div>
+            <h2 data-i18n="community.title">Питання? Проблеми? Побажання?</h2>
             <a href="https://discord.gg/ycmaz4vnbs" class="info-card" data-umami-event="click-discord">
                 <div class="info-icon orange">
                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -568,8 +592,8 @@
                     </svg>
                 </div>
                 <div class="info-body">
-                    <div class="info-title">Приєднуйтесь до нашого Discord</div>
-                    <div class="info-desc">Спільнота ентузіастів та розробників</div>
+                    <div class="info-title" data-i18n="community.discord.title">Приєднуйтесь до нашого Discord</div>
+                    <div class="info-desc" data-i18n="community.discord.desc">Спільнота ентузіастів та розробників</div>
                 </div>
                 <div class="info-arrow">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -578,11 +602,12 @@
         </div>
         <!-- Footer -->
         <footer class="footer">
-            <p><a href="/" data-umami-event="click-footer-home">← Повернутися на головну</a></p>
+            <p><a href="/" data-umami-event="click-footer-home" data-i18n="footer.back">← Повернутися на головну</a></p>
         </footer>
 
     </div>
 
+    <script src="/static/i18n.js" defer></script>
 </body>
 
 </html>
