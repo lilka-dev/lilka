@@ -86,6 +86,26 @@
       "uk": "Магазин",
       "en": "Shop"
     },
+    "options.label": {
+      "uk": "🛒 Де купити",
+      "en": "🛒 Where to buy"
+    },
+    "options.title": {
+      "uk": "Оберіть варіант покупки",
+      "en": "Choose a purchase option"
+    },
+    "options.baseKits": {
+      "uk": "Базові комплекти (imrad.com.ua)",
+      "en": "Base kits (imrad.com.ua)"
+    },
+    "options.additionalKits": {
+      "uk": "Додаткові комплекти (imrad.com.ua)",
+      "en": "Additional kits (imrad.com.ua)"
+    },
+    "options.altShops": {
+      "uk": "Альтернативні магазини",
+      "en": "Alternative shops"
+    },
     "header.title": {
       "uk": "Отже, ви вирішили придбати Лілку! 🐱",
       "en": "So, you decided to buy Lilka! 🐱"
@@ -147,16 +167,28 @@
       "en": "or"
     },
     "altShop.label": {
-      "uk": "🛒 Альтернативний магазин",
-      "en": "🛒 Alternative shop"
+      "uk": "🛒 Альтернативні магазини",
+      "en": "🛒 Alternative shops"
     },
     "altShop.title": {
-      "uk": "Купити на arduino.ua",
-      "en": "Buy on arduino.ua"
+      "uk": "Інші місця, де можна придбати Лілку",
+      "en": "Other places to buy Lilka"
     },
     "product.arduino": {
-      "uk": "DIY-консоль Лілка (K372)",
-      "en": "DIY Lilka Console (K372)"
+      "uk": "Набір на arduino.ua",
+      "en": "Kit on arduino.ua"
+    },
+    "product.radiokitKit": {
+      "uk": "Набір на radio-kit.com",
+      "en": "Kit on radio-kit.com"
+    },
+    "product.radiokitSoldered": {
+      "uk": "Готова (запаяна) на radio-kit.com",
+      "en": "Pre-soldered on radio-kit.com"
+    },
+    "product.ebay": {
+      "uk": "Лілка на eBay (міжнародна доставка)",
+      "en": "Lilka on eBay (international shipping)"
     },
     "step3.label": {
       "uk": "Крок третій",
