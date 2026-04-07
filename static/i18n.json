@@ -68,6 +68,14 @@
       "uk": "Повний опис та інструкції",
       "en": "Full guide and instructions"
     },
+    "community.flasher.label": {
+      "uk": "Веб-прошивач",
+      "en": "Web Flasher"
+    },
+    "community.flasher.desc": {
+      "uk": "Прошийте Лілку з браузера",
+      "en": "Flash Lilka from your browser"
+    },
     "footer.text": {
       "uk": "Лілка — open-source проєкт · <a href=\"https://github.com/and3rson/lilka\" data-umami-event=\"click-github\">GitHub</a>",
       "en": "Lilka is an open-source project · <a href=\"https://github.com/and3rson/lilka\" data-umami-event=\"click-github\">GitHub</a>"
