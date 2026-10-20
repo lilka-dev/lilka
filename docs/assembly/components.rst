@@ -161,7 +161,7 @@
    * - 3
      - SW9, SW10, SW12
      - Select/Start/Reset
-     - SMD Tactile Button
+     - DIP Tactile Button
      - `imrad.com.ua <https://imrad.com.ua/ua/kfc-a06-6-knopka-taktovaya-6x6x6-6>`__
      - `Посилання <https://www.aliexpress.com/item/32912263133.html>`__
      -
