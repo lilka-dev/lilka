@@ -1,0 +1,1706 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Andrew Dunai
+# This file is distributed under the same license as the Лілка package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Лілка \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-04 19:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../assembly/components.rst:2
+msgid "Перелік деталей"
+msgstr "Components list"
+
+#: ../../assembly/components.rst:4
+msgid "Зміст"
+msgstr "Contents"
+
+#: ../../assembly/components.rst:34 ../../assembly/components.rst:36
+msgid "Базовий комплект"
+msgstr "Base set"
+
+#: ../../assembly/components.rst:40 ../../assembly/components.rst:258
+#: ../../assembly/components.rst:366
+msgid "К-сть"
+msgstr "Quantity"
+
+#: ../../assembly/components.rst:41 ../../assembly/components.rst:259
+#: ../../assembly/components.rst:367
+msgid "ID"
+msgstr "ID"
+
+#: ../../assembly/components.rst:42 ../../assembly/components.rst:260
+#: ../../assembly/components.rst:368
+msgid "Значення"
+msgstr "Value"
+
+#: ../../assembly/components.rst:43 ../../assembly/components.rst:261
+#: ../../assembly/components.rst:369
+msgid "Назва"
+msgstr "Name"
+
+#: ../../assembly/components.rst:44 ../../assembly/components.rst:262
+#: ../../assembly/components.rst:370
+msgid "|ua| В Україні"
+msgstr "|ua| In Ukraine"
+
+#: ../../assembly/components.rst:6
+msgid "Україна"
+msgstr "Ukraine"
+
+#: ../../assembly/components.rst:45 ../../assembly/components.rst:263
+#: ../../assembly/components.rst:371
+msgid "|ali| AliExpress"
+msgstr ""
+
+#: ../../assembly/components.rst:11
+msgid "AliExpress"
+msgstr ""
+
+#: ../../assembly/components.rst:46 ../../assembly/components.rst:264
+#: ../../assembly/components.rst:372
+msgid "|mouser| Mouser"
+msgstr ""
+
+#: ../../assembly/components.rst:16
+msgid "Mouser"
+msgstr ""
+
+#: ../../assembly/components.rst:47 ../../assembly/components.rst:265
+#: ../../assembly/components.rst:373
+msgid "Ціна в |ua|"
+msgstr "Ціна в |ua|"
+
+#: ../../assembly/components.rst:48 ../../assembly/components.rst:266
+#: ../../assembly/components.rst:374
+msgid "Примітка"
+msgstr "Notes"
+
+#: ../../assembly/components.rst:49 ../../assembly/components.rst:267
+#: ../../assembly/components.rst:375
+msgid "Зображення"
+msgstr "Image"
+
+#: ../../assembly/components.rst:51 ../../assembly/components.rst:63
+#: ../../assembly/components.rst:87 ../../assembly/components.rst:99
+#: ../../assembly/components.rst:111 ../../assembly/components.rst:123
+#: ../../assembly/components.rst:135 ../../assembly/components.rst:173
+#: ../../assembly/components.rst:185 ../../assembly/components.rst:198
+#: ../../assembly/components.rst:210 ../../assembly/components.rst:222
+#: ../../assembly/components.rst:269 ../../assembly/components.rst:281
+#: ../../assembly/components.rst:293 ../../assembly/components.rst:306
+#: ../../assembly/components.rst:318 ../../assembly/components.rst:330
+#: ../../assembly/components.rst:377 ../../assembly/components.rst:389
+#: ../../assembly/components.rst:401
+msgid "1"
+msgstr ""
+
+#: ../../assembly/components.rst:52
+msgid "BZ1"
+msgstr ""
+
+#: ../../assembly/components.rst:53
+msgid "Buzzer (2.54-7.62mm між контактами)"
+msgstr "Buzzer (2.54-7.62mm pin distance)"
+
+#: ../../assembly/components.rst:54
+msgid "Passive Buzzer"
+msgstr ""
+
+#: ../../assembly/components.rst:55
+msgid "`mini-tech.com.ua <https://www.mini-tech.com.ua/ua/passivnyj-zummer>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:56
+msgid "`Посилання <https://www.aliexpress.com/item/1005005626151673.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:58 ../../assembly/components.rst:106
+msgid "5"
+msgstr ""
+
+#: ../../assembly/components.rst:64
+msgid "C1"
+msgstr ""
+
+#: ../../assembly/components.rst:65
+msgid "1uF"
+msgstr ""
+
+#: ../../assembly/components.rst:66
+msgid "1uF Capacitor"
+msgstr ""
+
+#: ../../assembly/components.rst:67
+msgid "`m-teh.com.ua <https://m-teh.com.ua/kondensator-ct4-1uf-50v-x7r-10/>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:68
+msgid "`Посилання <https://www.aliexpress.com/item/1005004787479555.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:70 ../../assembly/components.rst:82
+msgid "9"
+msgstr ""
+
+#: ../../assembly/components.rst:71
+msgid ""
+"Можна комплектувати `з цього набору <https://arduino.ua/prod2798-nabor-"
+"mnogosloinih-keramicheskih-kondensatorov-180-sht>`__"
+msgstr " "
+
+#: ../../assembly/components.rst:75 ../../assembly/components.rst:142
+#: ../../assembly/components.rst:313
+msgid "2"
+msgstr ""
+
+#: ../../assembly/components.rst:76
+msgid "C2, C3"
+msgstr ""
+
+#: ../../assembly/components.rst:77
+msgid "1uF-10uF"
+msgstr ""
+
+#: ../../assembly/components.rst:78
+msgid "1uF-10uF Capacitor"
+msgstr ""
+
+#: ../../assembly/components.rst:79
+msgid "`prom.ua <https://prom.ua/ua/p2221701868-kondensator-106-10uf.html/>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:80
+msgid "`Посилання <https://www.aliexpress.com/item/32973259342.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:88
+msgid "J1"
+msgstr ""
+
+#: ../../assembly/components.rst:89
+msgid "~"
+msgstr ""
+
+#: ../../assembly/components.rst:90
+msgid "USB Type-C to DIP Adapter"
+msgstr ""
+
+#: ../../assembly/components.rst:91
+msgid ""
+"`arduino.ua <https://arduino.ua/prod2783-plata-perehodnik-usb-type-c-na-"
+"dip-2-54>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:92
+msgid "`Посилання <https://www.aliexpress.com/item/1005006023156245.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:94
+msgid "12"
+msgstr ""
+
+#: ../../assembly/components.rst:100
+msgid "J2"
+msgstr ""
+
+#: ../../assembly/components.rst:101
+msgid "Ext"
+msgstr ""
+
+#: ../../assembly/components.rst:102
+msgid "Pin Header"
+msgstr ""
+
+#: ../../assembly/components.rst:103
+msgid "`arduino.ua <https://arduino.ua/prod332-konnektor-40-pin-papa>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:104 ../../assembly/components.rst:215
+msgid "`Посилання <https://www.aliexpress.com/item/4000873858801.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:107 ../../assembly/components.rst:218
+msgid ""
+"Варіант з AliExpress містить пари тато+мама, тому задовольняє ``J2`` та "
+"``U2J1``"
+msgstr ""
+"Variants from AliExpress contain pairs of socket and pin headers, "
+"satisfying both ``J2`` and ``U2J1``"
+
+#: ../../assembly/components.rst:112
+msgid "J3"
+msgstr ""
+
+#: ../../assembly/components.rst:113
+msgid "uSD"
+msgstr ""
+
+#: ../../assembly/components.rst:114
+msgid "SD Card Interface Module"
+msgstr ""
+
+#: ../../assembly/components.rst:115
+msgid "`prom.ua <https://prom.ua/ua/p2148810072-modul-plata-mini.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:116
+msgid "`Посилання <https://www.aliexpress.com/item/1005005302035188.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:118
+msgid "24"
+msgstr ""
+
+#: ../../assembly/components.rst:124
+msgid "R1"
+msgstr ""
+
+#: ../../assembly/components.rst:125
+msgid "10K"
+msgstr ""
+
+#: ../../assembly/components.rst:126
+msgid "10K Resistor"
+msgstr ""
+
+#: ../../assembly/components.rst:127
+msgid "`arduino.ua <https://arduino.ua/prod1970-rezistor-10-kom-5-shtyk>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:128 ../../assembly/components.rst:140
+#: ../../assembly/components.rst:311 ../../assembly/components.rst:323
+msgid "`Посилання <https://www.aliexpress.com/item/1005001627995396.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:130 ../../assembly/components.rst:161
+msgid "3"
+msgstr ""
+
+#: ../../assembly/components.rst:136
+msgid "R2"
+msgstr ""
+
+#: ../../assembly/components.rst:137 ../../assembly/components.rst:308
+msgid "100K"
+msgstr ""
+
+#: ../../assembly/components.rst:138 ../../assembly/components.rst:309
+msgid "100K Resistor"
+msgstr ""
+
+#: ../../assembly/components.rst:139 ../../assembly/components.rst:310
+msgid "`arduino.ua <https://arduino.ua/prod1549-rezistor-100-kom-5-shtyk>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:147 ../../assembly/components.rst:408
+msgid "8"
+msgstr ""
+
+#: ../../assembly/components.rst:148
+msgid "SW1-SW8"
+msgstr ""
+
+#: ../../assembly/components.rst:149
+msgid "Arrows + A/B/C/D"
+msgstr ""
+
+#: ../../assembly/components.rst:150
+msgid "Button Kit (12mm)"
+msgstr ""
+
+#: ../../assembly/components.rst:151
+msgid ""
+"`arduino.ua <https://arduino.ua/prod2506-komplekt-knopok-"
+"12mm-s-kolpachkom-5-cvetov>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:152
+msgid "`imrad.com.ua (кнопки) <https://imrad.com.ua/ua/kfc-012-7-3f-9>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:153
+msgid "`imrad.com.ua (ковпачки) <https://imrad.com.ua/ua/mec12pr-9>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:154
+msgid "`Посилання <https://www.aliexpress.com/item/1005005315348507.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:156
+msgid "36"
+msgstr ""
+
+#: ../../assembly/components.rst:157
+msgid "В комплекті від arduino.ua лише 6 шт"
+msgstr " "
+
+#: ../../assembly/components.rst:162
+msgid "SW9, SW10, SW12"
+msgstr ""
+
+#: ../../assembly/components.rst:163
+msgid "Select/Start/Reset"
+msgstr ""
+
+#: ../../assembly/components.rst:164
+msgid "DIP Tactile Button"
+msgstr ""
+
+#: ../../assembly/components.rst:165
+msgid ""
+"`imrad.com.ua <https://imrad.com.ua/ua/kfc-a06-6-knopka-taktovaya-"
+"6x6x6-6>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:166
+msgid "`Посилання <https://www.aliexpress.com/item/32912263133.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:168 ../../assembly/components.rst:276
+msgid "6"
+msgstr ""
+
+#: ../../assembly/components.rst:174
+msgid "SW11"
+msgstr ""
+
+#: ../../assembly/components.rst:175
+msgid "Power"
+msgstr ""
+
+#: ../../assembly/components.rst:176
+msgid "Toggle Switch"
+msgstr ""
+
+#: ../../assembly/components.rst:177
+msgid "`imrad.com.ua <https://imrad.com.ua/ua/msk-05g2-0-6>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:178
+msgid "`Посилання <https://www.aliexpress.com/item/4000030382277.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:180
+msgid "10"
+msgstr ""
+
+#: ../../assembly/components.rst:181
+msgid "Кнопка має бути кутова"
+msgstr "The switch should be on the side"
+
+#: ../../assembly/components.rst:186
+msgid "U1"
+msgstr ""
+
+#: ../../assembly/components.rst:187
+msgid "ESP32-S3-WROOM-1-N16R8"
+msgstr ""
+
+#: ../../assembly/components.rst:188
+msgid "Мікроконтролер"
+msgstr "Microcontroller"
+
+#: ../../assembly/components.rst:189
+msgid "`prom.ua <https://prom.ua/ua/p2051994816-esp32-dualcore-240mhz.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:190
+msgid ""
+"`rcscomponents.kiev.ua (проблеми з постачанням) "
+"<https://www.rcscomponents.kiev.ua/product/esp32-s3-wroom-1-n16r8_184448.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:191
+msgid "`Посилання <https://www.aliexpress.com/item/32901557709.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:192
+msgid ""
+"`Посилання <https://eu.mouser.com/ProductDetail/Espressif-"
+"Systems/ESP32-S3-WROOM-1-N16R8>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:193
+msgid "200"
+msgstr ""
+
+#: ../../assembly/components.rst:199
+msgid "U2"
+msgstr ""
+
+#: ../../assembly/components.rst:200
+msgid "280x240 1.69\\\" TFT"
+msgstr ""
+
+#: ../../assembly/components.rst:201
+msgid "1.7\\\" IPS TFT Display (ST7789)"
+msgstr ""
+
+#: ../../assembly/components.rst:202
+msgid ""
+"`arduino.ua <https://arduino.ua/prod6568-tft-displei-1-7-spi-"
+"240x280-rgb>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:203
+msgid "`Посилання <https://www.aliexpress.com/item/1005005933484586.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:205
+msgid "176"
+msgstr ""
+
+#: ../../assembly/components.rst:211
+msgid "U2J1"
+msgstr ""
+
+#: ../../assembly/components.rst:212
+msgid "TFT_Socket"
+msgstr ""
+
+#: ../../assembly/components.rst:213
+msgid "40-pin Connector"
+msgstr ""
+
+#: ../../assembly/components.rst:214
+msgid "`arduino.ua <https://arduino.ua/prod315-konnektor-40-pin-mama>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:217
+msgid "7"
+msgstr ""
+
+#: ../../assembly/components.rst:223
+msgid "U3"
+msgstr ""
+
+#: ../../assembly/components.rst:224
+msgid "TLV1117LV33DCYR (не плутати з TLV1117-33!)"
+msgstr "TLV1117LV33DCYR (do not confuse with TLV1117-33!)"
+
+#: ../../assembly/components.rst:225
+msgid "TLV1117LV33DCYR Voltage Regulator"
+msgstr ""
+
+#: ../../assembly/components.rst:226
+msgid ""
+"`kosmodrom.ua <https://kosmodrom.ua/ru/stabilizator-"
+"napryazheniya/tlv1117lv33dcyr.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:227
+msgid "`Посилання <https://www.aliexpress.com/item/1005006197085527.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:228
+msgid ""
+"`Посилання <https://eu.mouser.com/ProductDetail/Texas-"
+"Instruments/TLV1117LV33DCYR>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:229
+msgid "26"
+msgstr ""
+
+#: ../../assembly/components.rst:234 ../../assembly/components.rst:342
+#: ../../assembly/components.rst:413
+msgid "Разом"
+msgstr "Total"
+
+#: ../../assembly/components.rst:252 ../../assembly/components.rst:254
+msgid "Компоненти для батареї"
+msgstr "Components for battery"
+
+#: ../../assembly/components.rst:270
+msgid "D1"
+msgstr ""
+
+#: ../../assembly/components.rst:271
+msgid "1N4001"
+msgstr ""
+
+#: ../../assembly/components.rst:272
+msgid "1N4001 Diode"
+msgstr ""
+
+#: ../../assembly/components.rst:273
+msgid ""
+"`voron.ua <https://voron.ua/uk/catalog/029199--"
+"diod_1n4001_v_lente_mic_master_instrument_corporation_do41_do41>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:274
+msgid "`Посилання <https://www.aliexpress.com/item/1005005945645677.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:282
+msgid "J4"
+msgstr ""
+
+#: ../../assembly/components.rst:283
+msgid "TP4056"
+msgstr ""
+
+#: ../../assembly/components.rst:284
+msgid "TP4056 Charging Module"
+msgstr ""
+
+#: ../../assembly/components.rst:285
+msgid ""
+"`arduino.ua <https://arduino.ua/prod1486-zaryadnii-modyl-tp4056-micro-"
+"usb-s-fynkciei-zashhiti-akkymylyatora>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:286
+msgid "`Посилання <https://www.aliexpress.com/item/4001196732254.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:288
+msgid "16"
+msgstr ""
+
+#: ../../assembly/components.rst:289
+msgid ""
+"Бажано брати варіант з micro USB (займає менше місця, а гніздо USB Type-C"
+" вже є на платі Лілки)"
+msgstr ""
+"Micro USB variant is preferable, it takes less space, and USB Type-C "
+"socket is installed directly on the Lilka PCB"
+
+#: ../../assembly/components.rst:294
+msgid "Q1"
+msgstr ""
+
+#: ../../assembly/components.rst:295
+msgid "IRLML6401 (SOT-23)"
+msgstr ""
+
+#: ../../assembly/components.rst:296
+msgid "IRLML6401 MOSFET"
+msgstr ""
+
+#: ../../assembly/components.rst:297
+msgid ""
+"`rcscomponents.kiev.ua "
+"<https://www.rcscomponents.kiev.ua/product/irlml6401trpbf_34344.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:298
+msgid "`imrad.com.ua <https://imrad.com.ua/ua/irlml6401trpbf-1>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:299
+msgid "`Посилання <https://www.aliexpress.com/item/1005003078624760.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:300
+msgid ""
+"`Посилання <https://eu.mouser.com/ProductDetail/Infineon-"
+"Technologies/IRLML6401TRPBF>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:301
+msgid "4"
+msgstr ""
+
+#: ../../assembly/components.rst:307
+msgid "R3"
+msgstr ""
+
+#: ../../assembly/components.rst:319
+msgid "R4"
+msgstr ""
+
+#: ../../assembly/components.rst:320
+msgid "33K"
+msgstr ""
+
+#: ../../assembly/components.rst:321
+msgid "33K Resistor"
+msgstr ""
+
+#: ../../assembly/components.rst:322
+msgid ""
+"`justas-electronics.com.ua <https://justas-electronics.com.ua/rss0125w-"
+"33kOm/>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:325
+msgid "2.1"
+msgstr ""
+
+#: ../../assembly/components.rst:331 ../../assembly/components.rst:390
+#: ../../assembly/components.rst:402
+msgid "\\-"
+msgstr ""
+
+#: ../../assembly/components.rst:332
+msgid "Bat"
+msgstr ""
+
+#: ../../assembly/components.rst:333
+msgid "Будь-який (3.7V 1000 mAh +) LiPo на ваш розсуд"
+msgstr "Any (3.7V 1000 mAh +) LiPo of your choice"
+
+#: ../../assembly/components.rst:334
+#, python-format
+msgid ""
+"`m-teh.com.ua <https://m-teh.com.ua/li-pol-akumuliator-603048p-1000-ma-"
+"hod-3.7v-z-plato%D1%96u-zakhystu/?gad_source=1&gclid"
+"=CjwKCAiA29auBhBxEiwAnKcSqmJoC5UaOLX_kOIJX7G_EQOqEse5RDJBtxz8IvMHU9rLfGlj-"
+"MlgyhoCXgEQAvD_BwE>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:337
+msgid "116"
+msgstr ""
+
+#: ../../assembly/components.rst:338
+msgid ""
+"Рекомендуємо брати невелику батарею (6x30x48), щоб вона помістилась в "
+"корпус"
+msgstr "We advise to get a reasonably small one (e.g. 6x30x48 mm), so that it fits into a case"
+
+#: ../../assembly/components.rst:360 ../../assembly/components.rst:362
+msgid "Компоненти для звуку"
+msgstr "Components for audio"
+
+#: ../../assembly/components.rst:378
+msgid "J5"
+msgstr ""
+
+#: ../../assembly/components.rst:379
+msgid "MAX98357"
+msgstr ""
+
+#: ../../assembly/components.rst:380
+msgid "Mono Audio Amplifier Module"
+msgstr ""
+
+#: ../../assembly/components.rst:381
+msgid ""
+"`arduino.ua <https://arduino.ua/prod4112-modyl-aydioysilitelya-mono-3vt-"
+"klassa-d-na-max98357>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:382
+msgid "`Посилання <https://www.aliexpress.com/item/1005006711010527.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:383
+msgid "`Посилання <https://eu.mouser.com/ProductDetail/Adafruit/3006>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:384
+msgid "92"
+msgstr ""
+
+#: ../../assembly/components.rst:391
+msgid "Speaker"
+msgstr ""
+
+#: ../../assembly/components.rst:392
+msgid "8 Ohm 1 W Speaker"
+msgstr ""
+
+#: ../../assembly/components.rst:393
+msgid ""
+"`arduino.ua <https://arduino.ua/prod4280-dinamik-miniaturnii-8om-1-vt-"
+"30x20x4-2mm>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:394
+msgid "`Посилання <https://www.aliexpress.com/item/1005006461351585.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:396
+msgid "17"
+msgstr ""
+
+#: ../../assembly/components.rst:397
+msgid "Або гніздо (див. наст. пункт), або будь-який інший динамік на ваш розсуд"
+msgstr "Either socket (see next) or any speaker of your choice"
+
+#: ../../assembly/components.rst:403
+msgid "Audio Jack (mono)"
+msgstr ""
+
+#: ../../assembly/components.rst:404
+msgid "3.5mm Audio Jack"
+msgstr ""
+
+#: ../../assembly/components.rst:405
+msgid "`imrad.com.ua <https://imrad.com.ua/ua/pj3013d-144736>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:406
+msgid "`Посилання <https://www.aliexpress.com/item/1005006181883514.html>`__"
+msgstr ""
+
+#: ../../assembly/components.rst:409
+msgid "Лише якщо ви вирішили використовувати навушники замість динаміка"
+msgstr "Only if you choose to use headphones instead of a speaker"
+
+#: ../../assembly/components.rst:431
+msgid "Не входять в жодний комплект"
+msgstr "Not included in any kit"
+
+#: ../../assembly/components.rst:433
+msgid "MicroSD карта"
+msgstr "MicroSD card"
+
+#: ../../assembly/components.rst:434
+msgid "USB Type-C кабель"
+msgstr "USB Type-C cable"
+
+#: ../../assembly/configurations.rst:2
+msgid "Комплектації"
+msgstr "Kits"
+
+#: ../../assembly/configurations.rst:4
+msgid "Лілка - це модульний пристрій."
+msgstr "Lilka is a modular device."
+
+#: ../../assembly/configurations.rst:6
+msgid ""
+"Комплектація залежить від обраного вами варіанту збірки. Перелік "
+"компонентів для кожного варіанту збірки вказаний в наступному розділі."
+msgstr ""
+"The set depends on your chosen assembly variant. The list of components "
+"for each variant of assembly is given in the next chapter."
+
+#: ../../assembly/configurations.rst:14
+msgid "1. **Базова** (мінімальна) комплектація"
+msgstr "1. **Basic** (minimal) set."
+
+#: ../../assembly/configurations.rst:16
+msgid "Існує основний варіант збірки, який включає в себе:"
+msgstr "Exists the main variant of assembly, which includes:"
+
+#: ../../assembly/configurations.rst:18
+msgid "Друкована плата \"Лілка\""
+msgstr "Printed cirtuit board \"Lilka\""
+
+#: ../../assembly/configurations.rst:19
+msgid "Мікроконтролер ESP32-S3-WROOM-1-N16R8"
+msgstr "Microcontroller ESP32-S3-WROOM-1-N16R8"
+
+#: ../../assembly/configurations.rst:20
+msgid "Дисплей 1.69\\\" IPS 240x280 ST7789"
+msgstr "Display 1.69\\\" IPS 240x280 ST7789"
+
+#: ../../assembly/configurations.rst:21
+msgid "Модуль microSD-карти"
+msgstr "MicroSD card module"
+
+#: ../../assembly/configurations.rst:22
+msgid "Модуль роз'єму USB Type C"
+msgstr "USB Type-C socket module"
+
+#: ../../assembly/configurations.rst:23
+msgid "П'єзо-динамік"
+msgstr "Piezo-speaker (buzzer)"
+
+#: ../../assembly/configurations.rst:24
+msgid "Резистори, конденсатори та регулятор напруги(LDO)"
+msgstr "Resistors, capacitors and a voltage regulator"
+
+#: ../../assembly/configurations.rst:25
+msgid "Вимикач живлення"
+msgstr "Power switch"
+
+#: ../../assembly/configurations.rst:29
+msgid ""
+"Для використання **БАЗОВОЇ** комплектації вам **ПОТРІБНО ЗАМКНУТИ** "
+"джампер ``JP1`` на друкованій платі, з'єднавши його контакти між собою за"
+" допомогою припою."
+msgstr "To use **BASIC** configuration you **HAVE TO SHORT CIRCUIT** ``JP1`` jumper on the PCB, joining its contacts with solder."
+
+#: ../../assembly/configurations.rst:34
+msgid "2. Базова + **Батарея**"
+msgstr "2. Basic + **Battery**"
+
+#: ../../assembly/configurations.rst:36
+msgid ""
+"Додатково можна встановити батарею. Для цього потрібно додаткові "
+"компоненти:"
+msgstr "Additionally, a battery can be installed. For this, the following components are needed:"
+
+#: ../../assembly/configurations.rst:38
+msgid "Літій-полімерна батарея 3.7 В (на ваш вибір)"
+msgstr "Lithium polimer battery 3.7 V (of your choice)"
+
+#: ../../assembly/configurations.rst:39
+msgid "Зарядний модуль TP4056"
+msgstr "Charging module TP4056"
+
+#: ../../assembly/configurations.rst:40
+msgid "Діод 1N4001"
+msgstr "1N4001 Diode"
+
+#: ../../assembly/configurations.rst:41
+msgid "Транзистор IRLML6401 (корпус - SOT-23)"
+msgstr "IRLML6401 transistor (SOT-23 package)"
+
+#: ../../assembly/configurations.rst:42
+msgid "Декілька додаткових резисторів"
+msgstr "A few additional resistors"
+
+#: ../../assembly/configurations.rst:46
+msgid ""
+"Для використання комплектації **З БАТАРЕЄЮ** вам **ПОТРІБНО НЕ ЗАМИКАТИ**"
+" джампер ``JP1`` на друкованій платі. Якщо ви вже замкнули його, вам "
+"потрібно його розімкнути, нагрівши контакти паяльником і відокремивши їх "
+"один від одного."
+msgstr "To use the configuration **WITH BATTERY** you **MUST NOT SHORT** ``JP1`` jumpber on the PCB. If you have already done that, you have to undo this, by heating the pads with a soldering iron and separating them from each other."
+
+#: ../../assembly/configurations.rst:52
+msgid ""
+"Перші партії наборів з **Imrad** йдуть з хибним LDO, замість "
+"``TLV1117LV33DCYR`` йде ``LD1117AS33TR``, для коректної роботи від "
+"батареї бажано використати **TLV**"
+msgstr "Historically, first kits from Imrad distributor come with wrong LDO (voltage regulator): not ``TLV1117LV33DCYR`` but ``LD1117AS33TR``; for correct operation, **TLV** is recommended."
+
+#: ../../assembly/configurations.rst:57
+msgid "3. Базова + **Аудіо**"
+msgstr "3. Basic + **Audio**"
+
+#: ../../assembly/configurations.rst:59
+msgid "Звуковий модуль на ваш вибір"
+msgstr "Audio module of your choice"
+
+#: ../../assembly/configurations.rst:60
+msgid "Динамік або гніздо для навушників"
+msgstr "Speaker or a socket for headphones jack"
+
+#: ../../assembly/every_component.rst:2
+msgid "Що робить кожен компонент?"
+msgstr "What does each compoment do?"
+
+#: ../../assembly/every_component.rst:4
+msgid ""
+"Якщо ви не знайомі з радіоелектронікою, вам, можливо, цікаво: навіщо "
+"потрібен кожен компонент Лілки?"
+msgstr "If you are not familiar with radioelectronics, you perhaps wonder: what is each Lilka compoment for?"
+
+#: ../../assembly/every_component.rst:6
+msgid ""
+"Давайте розглянемо всі компоненти, з яких складається Лілка, і їхні "
+"основні функції."
+msgstr "Let's look into all the components of Lilka, and their main fucntions."
+
+#: ../../assembly/every_component.rst:9
+msgid "Мікроконтролер ESP32-S3-WROOM-N16R8 (``U1``)"
+msgstr "Microcontroller ESP32-S3-WROOM-N16R8 (``U1``)"
+
+#: ../../assembly/every_component.rst:11
+msgid "ESP32-S3-WROOM-N16R8"
+msgstr ""
+
+#: ../../assembly/every_component.rst:16
+msgid ""
+"Мікроконтролер :ref:`ESP32-S3-WROOM-N16R8 <mcu>` від компанії Espressif -"
+" це мозок Лілки."
+msgstr "Microcontroller :ref:`ESP32-S3-WROOM-N16R8 <mcu>` from Espressif company is the brain of Lilka."
+
+#: ../../assembly/every_component.rst:18
+msgid ""
+"Він відповідає за управління всіма іншими компонентами, зчитування даних "
+"з датчиків, керування виводами, роботу з Wi-Fi і Bluetooth, і багато "
+"іншого."
+msgstr "It is responsible for managing all other components, reading data from sensors, controlling outputs, work with Wi-Fi and Bluetooth, and a lot more."
+
+#: ../../assembly/every_component.rst:20
+msgid ""
+"Саме він місить флеш-пам'ять, в яку записується прошивка Лілки, і "
+"вбудовану пам'ять RAM."
+msgstr "It contains flash memory, into which the firmware is written to, and RAM."
+
+#: ../../assembly/every_component.rst:22
+msgid "Детальніше про мікроконтролер можна прочитати тут: :ref:`mcu`."
+msgstr "You can read more about the microcontroller here: :ref:`mcu`."
+
+#: ../../assembly/every_component.rst:25
+msgid "Конденсатор ``C1``, резистор ``R1`` та кнопка ``SW12`` (\"Reset\")"
+msgstr "Capacitor ``C1``, resistor ``R1`` and ``SW12`` button (\"Reset\")"
+
+#: ../../assembly/every_component.rst:27
+msgid "Reset circuit"
+msgstr ""
+
+#: ../../assembly/every_component.rst:31
+msgid ""
+"Ці компоненти відповідають за увімкнення мікроконтролера та його "
+"перезавантаження."
+msgstr "These components are responsible for turning the microcontroller on, and for rebooting it."
+
+#: ../../assembly/every_component.rst:33
+msgid ""
+"Річ у тім, що при під'єднанні живлення до Лілки, мікроконтролер не буде "
+"працювати коректно, доки не відбудеться процедура скидання (reset)."
+msgstr "The thing is, at the moment when Lilka is being powered on, the microcontroller won't be working correctly until its reset procedure is complete."
+
+#: ../../assembly/every_component.rst:35
+msgid ""
+"Уявіть собі, що сигнал скидання (reset) - це наче кава: коли на "
+"мікроконтролер подається живлення, він \"прокидається\" і починає "
+"спросоння робити неадекватні речі. Сигнал reset - це як кава: він "
+"\"продупляє\" мікроконтролер, і той починає працювати коректно."
+msgstr "Imagine that reset signal is like a coffee: when the microcontroller is powered on, it wakes up and starts to act inadequately because it's still half asleep. Reset signal, like coffee, properly wakes up the microcontroller, and it starts to work correctly."
+
+#: ../../assembly/every_component.rst:37
+msgid ""
+"Тобто скидання - це процес, який переводить мікроконтролер у початковий "
+"стан, в якому він може розпочати виконання програми з самого початку."
+msgstr "Thus, reset is a process which transitions the microcontroller into the initial state, in which it can begin execution of a program from the very start."
+
+#: ../../assembly/every_component.rst:39
+msgid ""
+"Резистор ``R1`` і конденсатор ``C1`` утворюють так зване RC-коло, або "
+"\"коливальний контур\", який відповідає за затримку сигналу скидання. Це "
+"означає, що при підключенні живлення до Лілки, мікроконтролер розпочне "
+"роботу не відразу, а через деякий час (долю мікросекунди)."
+msgstr "Resistor ``R1`` and capacitor ``C1`` make up a so-called RC cirtuit, which is responsible for the delay of reset signal. This means that when Lilka is powered on, the microcontroller will start to work not immediately, but after a certain delay (a fraction of a microsecond)."
+
+#: ../../assembly/every_component.rst:42
+msgid ""
+"Цей коливальний контур є абсолютно необхідним і його потребують майже всі"
+" мікроконтролери: без нього мікроконтролер може працювати некоректно або "
+"взагалі не запускатися."
+msgstr "This RC circuit is absolutely necessary and almost all microcontrollers need it: without it, the microcontroller can work incorrectly or may fail to boot."
+
+#: ../../assembly/every_component.rst:45
+msgid "Регулятор напруги ``U3`` та конденсатори ``C2`` і ``C3``"
+msgstr "Voltage regulator ``U3`` and capacitors ``C2`` and ``C3``"
+
+#: ../../assembly/every_component.rst:47
+msgid "Voltage regulator"
+msgstr ""
+
+#: ../../assembly/every_component.rst:51
+msgid "Ці компоненти відповідають за стабілізацію напруги живлення Лілки."
+msgstr "These components are reseponsible for stabilisation of the voltage of Lilka power."
+
+#: ../../assembly/every_component.rst:53
+msgid ""
+"Мікроконтролер ESP32-S3-WROOM-N16R8 працює при напрузі від 3.0V до 3.6V. "
+"Але:"
+msgstr "Microcontroller ESP32-S3-WROOM-N16R8 works with voltage between 3.0 V and 3.6 V. But:"
+
+#: ../../assembly/every_component.rst:55
+msgid "Живлення від USB-порту комп'ютера може бути від 4.75V до 5.25V."
+msgstr "Power from USB port of a PC may be anywhere between 4.75 V and 5.25 V."
+
+#: ../../assembly/every_component.rst:56
+msgid "Живлення від акумулятора може бути від 2.4V до 4.2V."
+msgstr "Power from a battery may anywhere be between 2.4 V and 4.2 V."
+
+#: ../../assembly/every_component.rst:58
+msgid ""
+"Обидві з цих напруг майже стовідсотково спалять мікроконтролер! Для цього"
+" і потрібен регулятор напруги ``U3``: він перетворює вхідну напругу в "
+"напругу 3.3V, яка потрібна мікроконтролеру."
+msgstr "Either of these voltages are almost certain to burn the microcontroller! That's why we need the voltage regulator ``U3``: it converts the input voltage into 3.3 V, which the microcontroller needs."
+
+#: ../../assembly/every_component.rst:60
+msgid ""
+"Конденсатори ``C2`` і ``C3`` відповідають за стабілізацію напруги: вони "
+"зберігають енергію, яка потрібна компонентам Лілки, коли напруга від "
+"живлення змінюється. Рекомендовані омінали цих конденсаторів переважно "
+"вказані в документації регулятора напруги."
+msgstr "Capacitors ``C2`` and ``C3`` are responsible for stabilisation of voltage: they conserve the energy, which Lilka components need, when voltage from the power supply changes. Recommended values of these capacitors are usually given in the documentation of a voltage regulator."
+
+#: ../../assembly/every_component.rst:64
+msgid "Роз'єм USB (``J1``)"
+msgstr "USB socket (``J1``)"
+
+#: ../../assembly/every_component.rst:66
+msgid "USB Type C connector"
+msgstr ""
+
+#: ../../assembly/every_component.rst:70
+msgid ""
+"Модуль ``J1`` - це всього лиш плата з припаяним роз'ємом USB Type C. Вона"
+" не містить жодних інших компонентів - лише роз'єм."
+msgstr "``J1`` module is simply a board with a USB Type-C socket soldered onto it. It doesn't contain any other components - just a socket."
+
+#: ../../assembly/every_component.rst:72
+msgid ""
+"Паяти роз'єм USB Type C безпосередньо на головну плату Лілки було б дуже "
+"складно: роз'єм має дуже маленькі контакти, які важко паяти. Саме тому ми"
+" і використовуємо модуль ``J1``: він має великі контакти, які можна легко"
+" паяти на основну плату Лілки."
+msgstr "To solder a USB Type-C socket directly onto main Lilka PCB would be very difficult: the socket has tiny contacts, which are difficult to solder.That's why we use ``J1`` moduke: it has big contacts, which can be easily soldered to the main Lilka board."
+
+#: ../../assembly/every_component.rst:76
+msgid "Модуль заряду-розряду LiPo-акумулятора (``J4``)"
+msgstr "LiPo-battery charge-discharge module (``J4``)"
+
+#: ../../assembly/every_component.rst:78
+msgid ""
+"Якщо ви збираєте комплект Лілки з акумулятором, цей модуль відповідає за "
+"зарядку акумулятора від USB-порту, а також забезпечує захист від "
+"перезаряду та перерозряду акумулятора при роботі Лілки від акумулятора."
+msgstr "If you assemble the Lilka configuration which has a battery, this module is responsible for charing the battery with power from the USB port, and also protects from overcharge and deep discharge of the battery when Lilka works from battery."
+
+#: ../../assembly/every_component.rst:80
+msgid ""
+"Він працює на основі мікросхеми ``TP4056``, тому його часто так і "
+"називають - \"модуль TP4056\"."
+msgstr "It works using ``TP4056`` chip, which is why it's commonly called after it - \"TP4056 module\"."
+
+#: ../../assembly/every_component.rst:82
+msgid ""
+"На виході цей модуль дає напругу, яка дорівнює напрузі акумулятора, тобто"
+" від 2.4V до 4.2V. Ця напруга подається на регулятор напруги ``U3``, який"
+" перетворює її в 3.3V для живлення мікроконтролера."
+msgstr "This module, on its output, gives the voltage which equals the battery voltage, which is between 2.4 V and 4.2 V. This voltage is passed to the voltage regulator ``U3``, which converts it to 3.3 V to power the microcontroller."
+
+#: ../../assembly/every_component.rst:85
+msgid "Польовий транзистор P-типу ``Q1``, резистор ``R3`` та діод ``D1``"
+msgstr "Field-effect transistor of P type ``Q1``"
+
+#: ../../assembly/every_component.rst:87
+msgid "USB & battery power management"
+msgstr ""
+
+#: ../../assembly/every_component.rst:92
+msgid ""
+"Ці компоненти потрібні для коректної роботи Лілки, коли ви одночасно "
+"заряджаєте акумулятор і живите Лілку від USB-порту."
+msgstr "These components are necessary for correct operation of Lilka, when you're simultaneously charging the battery and powering Lilka from USB port."
+
+#: ../../assembly/every_component.rst:94
+msgid ""
+"Річ у тім, що одночасно заряджати акумулятор від USB і в той же час "
+"живити Лілку від цього ж акумулятора - небезпечно: модуль TP4056 (``J4``)"
+" не вміє коректно відслідковувати стан заряду акумулятора, якщо той "
+"використовується Лілкою, і може подати на нього невідповідну напругу."
+msgstr "The thing is, it is dangerous to charge the battery from USB and to power Lilka from the same battery: the TP4056 module (``J4``) can't track the charging status of the battery, if it's in use by Lilka, and may send incorrect voltage to it."
+
+#: ../../assembly/every_component.rst:97
+msgid ""
+"Тому ми використовуємо польовий транзистор P-типу (``Q1``), який "
+"\"вимикається\" при підключенні живлення від USB, і таким чином при "
+"під'єднаному USB-живленні Лілка живиться від USB, а не від акумулятора."
+msgstr "That's why we use a P-type field-effect transistor (``Q1``), which \"turns off\" when USB power is plugged in, so that when USB power is plugged in, Lilka is powered from USB rather than the battery."
+
+#: ../../assembly/every_component.rst:99
+msgid ""
+"Резистор ``R3`` - це слабка підтяжка польового транзистора ``Q1`` до "
+"землі, щоб при відсутності напруги від USB цей транзистор не вимикався "
+"сам по собі, а за замовчуванням був увімкнений, щоб Лілка живилася від "
+"акумулятора."
+msgstr "Resistor ``R3`` is a weak pulldown of ``Q1`` fleld-effect transistor towards ground, so that in absense of voltage from USB this transistor won't turn off on its own, but stays on by default, so that Lilka gets power from the battery."
+
+#: ../../assembly/every_component.rst:102
+msgid ""
+"Діод ``D1`` не дозволяє напрузі від акумулятора подаватися на завтор "
+"транзистора ``Q1`` і тим самим призакривати його, коли USB-живлення "
+"від'єднане. Крім цього, як бонус - він частоково знижує напругу (на "
+"~0.7V), і тому регулятор напруги ``U3`` при живленні Лілки від USB буде "
+"трохи менше нагріватися."
+msgstr "``D1`` diode does not allow the voltage from the battery to go to ``Q1`` transistor gate and cause it to turn off, when USB power is unplugged. Besides, as a bonus, it somewhat lowers the voltage (by ~0.7 V), and that's why voltage regulator ``U3`` will heat up less when powering Lilka from USB."
+
+#: ../../assembly/every_component.rst:106
+msgid "Резистори ``R2`` і ``R4``"
+msgstr "Resistors ``R2`` and ``R4``"
+
+#: ../../assembly/every_component.rst:108
+msgid "Voltage divider"
+msgstr ""
+
+#: ../../assembly/every_component.rst:112
+msgid ""
+"Ці резистори здійснюють ділення напруги для вимірювання напруги "
+"акумулятора."
+msgstr "These resistors divide the voltage for measuring the voltage of the battery."
+
+#: ../../assembly/every_component.rst:114
+msgid ""
+"Напруга акумулятора може бути в діапазоні від 2.4V до 4.2V, але "
+":term:`АЦП` (аналого-цифровий перетворювач) мікроконтролера ESP32-S3"
+"-WROOM-N16R8 вміє вимірювати напругу лише від 0V до 3.1V."
+msgstr "Battery voltage may be anywhere between 2.4 V and 4.2 V, but :term:`ADC` (analog-to-digital converter) of ESP32-S3-WROOM-N16R8 microcontroller can measure voltage only between 0 V and 3.1 V."
+
+#: ../../assembly/every_component.rst:116
+msgid ""
+"Тому ми використовуємо резистори ``R2`` і ``R4``, які здійснюють ділення "
+"напруги, використовуючи формулу:"
+msgstr "That's why we use resistors ``R2`` and ``R4``, which divide the voltage, according to the formula:"
+
+#: ../../assembly/every_component.rst:118
+msgid ""
+"V_{\\text{вихід}} = V_{\\text{батарея}} \\times \\left(\\frac{R_4}{R_2 + "
+"R_4}\\right)"
+msgstr ""
+"V_{\\text{input}} = V_{\\text{battery}} \\times \\left(\\frac{R_4}{R_2 + "
+"R_4}\\right)"
+
+#: ../../assembly/every_component.rst:122
+msgid ""
+"Номінали резисторів ``R2`` і ``R4`` вибираються так, щоб напруга на "
+"виході ділення була 3.1V при вхідній напрузі 4.2V."
+msgstr "The values of resistors ``R2`` and ``R4`` are chosen so that the voltage on the output is 3.1 V when the input voltage is 4.2 V."
+
+#: ../../assembly/every_component.rst:124
+msgid ""
+"В нашому випадку ми використовуємо резистори ``R2`` = 100 кОм і ``R4`` = "
+"33 кОм."
+msgstr "In our case, we use resistors ``R2`` = 100 kΩ and ``R4`` = 33 kΩ."
+
+#: ../../assembly/every_component.rst:126
+msgid ""
+"Ми могли б використати і резистори менших номіналів - скажімо, 10 кОм і "
+"3.3 кОм, але вони б витрачали в 100 разів більше енергії та швидше "
+"розряджали акумулятор."
+msgstr "We could use resistors of lower value, for example, 10 kΩ and 3.3 kΩ, but they would consume 100 times more energy and discharge the battery faster."
+
+#: ../../assembly/every_component.rst:129
+msgid "Роз'єм розширення (``J2``)"
+msgstr "Extension socket (``J2``)"
+
+#: ../../assembly/every_component.rst:131
+msgid "Extension connector"
+msgstr ""
+
+#: ../../assembly/every_component.rst:135
+msgid ""
+"Лілка - це набір для розробки, і ви, можливо, захочете підключити до неї "
+"додаткові датчики, дисплеї, камери, акселеометри, сервоприводи чи ще "
+"щось."
+msgstr "Lilka is a kit for development, and you, probably, want to plug into it some extra sensors, displays, cameras, accelerometers, servo motors or something else."
+
+#: ../../assembly/every_component.rst:137
+msgid ""
+"Для цього і потрібен роз'єм розширення ``J2``: він має виводи для "
+"живлення сторонніх компонентів, а також декілька :term:`GPIO`-ліній "
+"мікроконтролера, які можна використовувати для підключення додаткових "
+"пристроїв."
+msgstr "That's why we need the extension socket ``J2``: it has the pins to power external components, and also some :term:`GPIO`-lines of the microcontroller, which may be used for plugging in additional devices."
+
+#: ../../assembly/every_component.rst:139
+msgid ""
+"Детальніше про роз'єм розширення можна прочитати в розділі "
+":ref:`extension`."
+msgstr "See more about the extension socket in the :ref:`extension` chapter."
+
+#: ../../assembly/every_component.rst:142
+msgid "Модуль SD-карти (``J3``)"
+msgstr "SD-card module (``J3``)"
+
+#: ../../assembly/every_component.rst:144
+msgid "SD card module"
+msgstr ""
+
+#: ../../assembly/every_component.rst:148
+msgid ""
+"Цей модуль дозволяє Лілці читати та зберігати дані на SD-карті, а також "
+"запускати з неї сторонні прошивки."
+msgstr "This module enables Lilka to read and save data on SD-card, and run other software from it."
+
+#: ../../assembly/every_component.rst:150
+msgid ""
+"SD-карти дозволяють працювати з ними через шину SPI, яка підтримується "
+"мікроконтролером ESP32-S3-WROOM-N16R8."
+msgstr "SD-cards allow working with them over SPI bus, which is supported by ESP32-S3-WROOM-N16R8 microcontroller."
+
+#: ../../assembly/every_component.rst:152
+msgid "Більше інформації є тут: :ref:`keira-uk:sdcard`."
+msgstr "See more here: :ref:`keira-uk:sdcard`."
+
+#: ../../assembly/every_component.rst:155
+msgid "ЦАП (DAC) - Цифро-аналоговий перетворювач (``J5``)"
+msgstr "DAC - digital-to-analog convertor (``J5``)"
+
+#: ../../assembly/every_component.rst:157
+msgid "DAC"
+msgstr ""
+
+#: ../../assembly/every_component.rst:161
+msgid "Цей компонент відповідає за генерацію аналогових сигналів."
+msgstr "This component is responsible for generation of analog signals."
+
+#: ../../assembly/every_component.rst:163
+msgid ""
+"Найпоширеніше використання ЦАП - генерація звуків: відтворення мелодій, "
+"голосів, звуків природи, і т.д."
+msgstr "The most common use case for DAC is sound generation: playback of melodies, voices, natural sounds etc"
+
+#: ../../assembly/every_component.rst:165
+msgid ""
+"Лілка використовує модуль ЦАП на базі мікросхеми ``MAX98357A`` від "
+"компанії Maxim Integrated."
+msgstr "Lilka uses DAC module based on ``MAX98357A`` chip from Maxim Integrated company."
+
+#: ../../assembly/every_component.rst:167
+msgid ""
+"Це дозволяє Лілці відтворювати звуки високої якості, а також підключати "
+"до неї аудіо-пристрої виведення звуку - наприклад, колонки, навушники, "
+"аудіо-підсилювачі тощо."
+msgstr " This enables Lilka to reproduce high quality sound, and also connect to it audio output devices, like speakers, headphones, audio amplifiers etc"
+
+#: ../../assembly/every_component.rst:169
+msgid "Для роботи з ЦАПом використовується шина I2S."
+msgstr "To work with DAC, I2S bus is used."
+
+#: ../../assembly/every_component.rst:172
+msgid "П'єзо-динамік (``BZ1``)"
+msgstr "Piezo-speaker (buzzer, ``BZ1``)"
+
+#: ../../assembly/every_component.rst:174
+msgid "Buzzer"
+msgstr ""
+
+#: ../../assembly/every_component.rst:178
+msgid ""
+"П'єзо-динамік - це простий динамік, який може відтворювати звуки. Його "
+"можна під'єднувати безпосередньо до :term:`GPIO`-виводів мікроконтролера."
+msgstr "Piezo-speaker is a simple speaker which can reproduce sounds. It can be connected directly to :term:`GPIO`-pins of the microcontroller."
+
+#: ../../assembly/every_component.rst:180
+msgid ""
+"Основні плюсі п'єзо-динаміка - його простота та ціна. Він не потребує "
+"жодних додаткових компонентів: просто підключіть його до "
+":term:`GPIO`-виводів мікроконтролера і відтворюйте звуки."
+msgstr "Main advantages of the buzzer are its simplicity and price. It doesn't need any additional components: just connect it to :term:`GPIO`-pins of a microcontroller and play back the sounds."
+
+#: ../../assembly/every_component.rst:182
+msgid ""
+"Головний мінус - обмежені можливості. П'єзо-динамік може відтворювати "
+"лише прості звуки і не здатний відтворювати музику високої якості. Крім "
+"того, ESP32-S3 не має вбудованого цифро-аналогового перетворювача, тому "
+"звукова хвиля може мати лише форму меандру (т. зв. \"прямокутна\" звукова"
+" хвиля)."
+msgstr "The main disadvantage is its limited capability. Buzzer can only play simple sounds and is unable to play high quality music. Besides, ESP32-S3 has no builting digital-to-analog converter, so an audio wave can only have a form of meander (so-called \"rectangular\" audio wave)."
+
+#: ../../assembly/every_component.rst:185
+msgid ""
+"Якщо ви хочете відтворювати музику високої якості, вам краще використати "
+"додатковий модуль ЦАП (див. вище)."
+msgstr "If you want to reproduce high quality music, you better use a dedicated DAC module (see above)."
+
+#: ../../assembly/every_component.rst:188
+msgid "IPS TFT дисплей (``U2``)"
+msgstr "IPS TFT display (``U2``)"
+
+#: ../../assembly/every_component.rst:190
+msgid "Display"
+msgstr ""
+
+#: ../../assembly/every_component.rst:194
+msgid "Дисплей. Куди ж без нього? ;)"
+msgstr "Display. How could we do without? ;)"
+
+#: ../../assembly/every_component.rst:196
+msgid ""
+"Цей дисплей використовує IPS-матрицю, яка забезпечує високу якість "
+"зображення, широкі кути огляду, яскравість та насиченість кольорів."
+msgstr "This display uses IPS matrix, which brings high quality picture, with wide angle of view, brightness and rich colors."
+
+#: ../../assembly/every_component.rst:198
+msgid ""
+"Лілка використовує дисплей на базі мікросхеми ``ST7789`` від компанії "
+"Sitronix."
+msgstr "Lilka uses a display based on ``ST7789`` chip from Sitronix company."
+
+#: ../../assembly/every_component.rst:201
+msgid "Кнопки"
+msgstr "Buttons"
+
+#: ../../assembly/every_component.rst:203
+msgid "Думаю, тут все зрозуміло: кнопки використовуються для керування Лілкою."
+msgstr "I think it's clear: buttons are for controlling Lilka."
+
+#: ../../assembly/every_component.rst:205
+msgid ""
+"Кожна кнопка підключена до свого :term:`GPIO`-виводу мікроконтролера і "
+"відповідає за певну функцію."
+msgstr "Every button is connected to its own :term:`GPIO`-pin of the microcontroller and is responsible for a certain function."
+
+#: ../../assembly/every_component.rst:209
+msgid ""
+"\"Але чому ви не використали, скажімо, регістр зсуву для підключення "
+"кнопок, чи розширювачі I/O?\" - запитаєте ви. \"Ви могли б підключити до "
+"мікроконтролера 8 кнопок, використовуючи всього 3 :term:`GPIO`-виводи!\""
+msgstr "\"But why don't you use, say, a shift register to connect the buttons, or I/O extenders?\" - you'd ask. \"You could have connected 8 buttons to the microcontroller, using just 3 :term:`GPIO` pins\""
+
+#: ../../assembly/every_component.rst:211
+msgid ""
+"Відповідь проста: мета Лілки - бути простою у збірці. Регістри зсуву - це"
+" додаткові компоненти, які вам потрібно паяти і які займають місце на і "
+"так невеликій платі Лілки, тому ми вирішили обійтися без них."
+msgstr "The answer is simple: Lilka's goal is to be simple to assemble. Shift register is one more component to solder, which would have to take place on the Lilka PCB which is not so big, so we decided to do without."
+
+#: ../../assembly/index.rst:2
+msgid ":octicon:`tools` Як зібрати Лілку"
+msgstr ":octicon:`tools` How to assemble Lilka"
+
+#: ../../assembly/index.rst:6
+msgid ""
+"Будь ласка, уважно прочитайте статті у цьому розділі, перш ніж почати "
+"збирати Лілку."
+msgstr "Please read attentively the articles in this chapter before you start to solder Lilka."
+
+#: ../../assembly/instructions.rst:2
+msgid "Збір пристрою"
+msgstr "Device assembly"
+
+#: ../../assembly/instructions.rst:4
+msgid ""
+":term:`PCB` Лілки спроєктована для максимально простого збору зі "
+"збереженням її мінімального розміру."
+msgstr ":term:`PCB` of Lilka was designed to maximise the ease of assembly, while keeping its minimalistic size."
+
+#: ../../assembly/instructions.rst:6
+msgid ""
+"Більшість компонентів - це :term:`THT`-компоненти, тобто компоненти, які "
+"вставляються в отвори плати і паяються з задньої сторони. Це дозволяє "
+"збирати плату без використання спеціального обладнання."
+msgstr "Majority of the components are :term:`THT`, that is, they are inserted into holes in the board and are soldered from the back. This enables board assembly without using special equipment."
+
+#: ../../assembly/instructions.rst:8
+msgid ""
+"Декілька компонентів - це :term:`SMD`-компоненти, які паяються зверху. "
+"Серед них - мікроконтролер ESP32-S3-WROOM-1-N16R8, регулятор напруги "
+"TLV1117LV-33DCYR та транзистор IRLML6401."
+msgstr "A few compontns are :term:`SMD`, which are soldered from the top. Among them is ESP32-S3-WROOM-1-N16R8 microcontroller, TLV1117LV-33DCYR voltage regulator and IRLML6401 transistor."
+
+#: ../../assembly/instructions.rst:11
+msgid "Порядок збору"
+msgstr "The order of assembly"
+
+#: ../../assembly/instructions.rst:13
+msgid "**Перш за все, припаяйте SMD-компоненти.**"
+msgstr "**First, solder the SMD compoments."
+
+#: ../../assembly/instructions.rst:15
+msgid ""
+"Вони займають найменше місця та не заважатимуть вам при пайці решти "
+"компонентів.**"
+msgstr "They take least space and won't get in the way during further soldering.**"
+
+#: ../../assembly/instructions.rst:17
+msgid "``U1`` (мікроконтролер ESP32-S3-WROOM-1-N16R8)"
+msgstr "``U1`` (microcontroller ESP32-S3-WROOM-1-N16R8)"
+
+#: ../../assembly/instructions.rst:18
+msgid "``U3`` (регулятор TLV1117LV-33DCYR)"
+msgstr "``U3`` (voltage regulator TLV1117LV-33DCYR)"
+
+#: ../../assembly/instructions.rst:19
+msgid "``Q1`` IRLML6401 (якщо ви використовуєте комплектацію з батареєю)"
+msgstr "``Q1`` IRLML6401 (if you use a configuration with a battery)"
+
+#: ../../assembly/instructions.rst:21
+msgid "**Припаяйте модуль USB-C** (``J1``)."
+msgstr "**Solder the USB-C module** (``J1``)."
+
+#: ../../assembly/instructions.rst:23
+msgid ""
+"Переконайтесь, що ви вставили модуль USB-C вірно. Він має бути вирівняний"
+" з краєм плати."
+msgstr "Make sure you have inserted the USB-C module correctly, it should align with the board's edge."
+
+#: ../../assembly/instructions.rst:25
+msgid "Є два способи паяти такі модулі на плату:"
+msgstr "There are two ways to solder such modules to the board:"
+
+#: ../../assembly/instructions.rst:27
+msgid ""
+"**Спосіб 1**: Ви можете прикласти його до плати та вставити штирьові "
+"контакти крізь нього та плату, утворивши таким чином \"сендвіч\". Після "
+"цього вам потрібно припаяти штирьові контакти з обох сторін. Таким чином "
+"модуль щільно прилягатиме до плати та не буде провисати."
+msgstr "**Method 1**: you can put it over the board and insert the pin rods through it and the board, arranging them in a \"sandwich\" fashion. After this you have to solder the rods from both sides. This way, the module will lay flush on the board and won't hang."
+
+#: ../../assembly/instructions.rst:32
+msgid ""
+"**Спосіб 2**: Ви можете спершу припаяти штирьові контакти на модуль "
+"USB-C, а потім припаяти модуль на плату. Цей спосіб простіший, але модуль"
+" буде провисати, оскільки між ним та платою буде вільний простір, "
+"утворений пластиковим тримачем штирьових контактів."
+msgstr "**Method 2**: You can first solder the rods to the USB-C module, andthen solder the module onto the board. This method is simpler, but the module will hang, because between it and the board there will be free space, caused by the plastic rod holder."
+
+#: ../../assembly/instructions.rst:37
+msgid "Є й інші способи - не бійтесь проявляти креативність!"
+msgstr "There are other ways - don't be afraid to express your creativity!"
+
+#: ../../assembly/instructions.rst:39
+msgid ""
+"**Якщо ви збираєте комплектацію з батареєю, припаяйте наступні компоненти"
+" (вони всі позначені пунктирними лініями на задній стороні плати)**"
+msgstr "**If you are going to assemble a conifiguration with a battery, solder the following components (they are marked with dashed lines on the back side of the board)**"
+
+#: ../../assembly/instructions.rst:41
+msgid "``Q1`` IRLML6401"
+msgstr ""
+
+#: ../../assembly/instructions.rst:42
+msgid "``D1`` (діод 1N4001)"
+msgstr "``D1`` (1N4001 diode)"
+
+#: ../../assembly/instructions.rst:43
+msgid "Резистори ``R3`` (100 кОм) та ``R4`` (33 кОм)"
+msgstr "Resistors ``R3`` (100 kΩ) and ``R4`` (33 kΩ)"
+
+#: ../../assembly/instructions.rst:44
+msgid "``J4`` (модуль заряду/розряду батареї на базі TP4056)"
+msgstr "``J4`` (module of battery charge/discharge based on TP4056)"
+
+#: ../../assembly/instructions.rst:45
+msgid ""
+"LiPo батарея на ваш вибір (припаюється безпосередньо до пінів модуля "
+"заряду/розряду, позначених як B+ та B-)"
+msgstr "LiPo battery of your choice (soldered directly to the pins of the charge/discharge module, marked as B+ and B-)"
+
+#: ../../assembly/instructions.rst:48
+msgid ""
+"Обов'язково перевірте максимальний допустимий струм заряду вашого "
+"акумулятора! Модуль TP4056 по замовчуванню заряджає акумулятор струмом "
+"1А. Струм заряду можна корегувати заміною резистора R3(R_PROG) на платі "
+"модуля TP4056."
+msgstr "It is mandatory to check the maximum allowed charge current of your battery! TP4056 module by default charges the battery using 1 A current."
+
+#: ../../assembly/instructions.rst:51
+msgid "**Таблиця зарядного струму**"
+msgstr "**Charge current table**"
+
+#: ../../assembly/instructions.rst:55
+msgid "**Резистор (R_PROG)**"
+msgstr "**Resistor (R_PROG)**"
+
+#: ../../assembly/instructions.rst:56
+msgid "**Струм заряджання (I_charge)**"
+msgstr "**Charging current (I_charge)**"
+
+#: ../../assembly/instructions.rst:57
+msgid "30 кОм"
+msgstr "30 kΩ"
+
+#: ../../assembly/instructions.rst:58
+msgid "40 мА"
+msgstr "40 mA"
+
+#: ../../assembly/instructions.rst:59
+msgid "10 кОм"
+msgstr ""
+
+#: ../../assembly/instructions.rst:60
+msgid "120 мА"
+msgstr "120 mA"
+
+#: ../../assembly/instructions.rst:61
+msgid "5 кОм"
+msgstr "5 kΩ"
+
+#: ../../assembly/instructions.rst:62
+msgid "240 мА"
+msgstr "240 mA"
+
+#: ../../assembly/instructions.rst:63
+msgid "4 кОм"
+msgstr "4 kΩ"
+
+#: ../../assembly/instructions.rst:64
+msgid "300 мА"
+msgstr ""
+
+#: ../../assembly/instructions.rst:65
+msgid "3 кОм"
+msgstr "3 kΩ"
+
+#: ../../assembly/instructions.rst:66
+msgid "400 мА"
+msgstr "400 mA"
+
+#: ../../assembly/instructions.rst:67
+msgid "2 кОм"
+msgstr "2 kΩ"
+
+#: ../../assembly/instructions.rst:68
+msgid "600 мА"
+msgstr "600 mA"
+
+#: ../../assembly/instructions.rst:69
+msgid "1.5 кОм"
+msgstr "1.5 kΩ"
+
+#: ../../assembly/instructions.rst:70
+msgid "800 мА"
+msgstr "800 mA"
+
+#: ../../assembly/instructions.rst:71
+msgid "1.2 кОм"
+msgstr "1.2 kΩ"
+
+#: ../../assembly/instructions.rst:72
+msgid "1000 мА"
+msgstr "1000 mA"
+
+#: ../../assembly/instructions.rst:73
+msgid "1 кОм"
+msgstr "1 kΩ"
+
+#: ../../assembly/instructions.rst:74
+msgid "1200 мА"
+msgstr "1200 mA"
+
+#: ../../assembly/instructions.rst:77
+msgid "**Якщо ви збираєте комплектацію без батареї, не паяйте ці компоненти!**"
+msgstr "**If you are assembling a configuration without a battery, don't solder these components!**"
+
+#: ../../assembly/instructions.rst:79
+msgid ""
+"Натомість **замкніть** джампер ``JP1``, який знаходиться всередині "
+"посадкового місця діода ``D1``. Для цього використайте паяльник та "
+"припій, щоб замкнути контакти джампера."
+msgstr "Instead, **short-circuit** the ``JP1`` jumpber, which is inside the seat of ``D1`` diode. For this, use a soldering iron and a solder to solder the jumper contacts together."
+
+#: ../../assembly/instructions.rst:81
+msgid "**Припаяйте наступні компоненти:**"
+msgstr "**Solder the following components:**"
+
+#: ../../assembly/instructions.rst:83
+msgid "Резистори ``R1`` (10 кОм) ``R2`` (100 кОм)"
+msgstr "Resistors ``R1`` (10 kΩ) and ``R2`` (100 kΩ)"
+
+#: ../../assembly/instructions.rst:84
+msgid ""
+"Конденсатори ``C1`` (1 мкФ, маркування \"105\"), ``C2`` та ``C3`` (10 "
+"мкФ, маркування \"106\")"
+msgstr "Capacitors ``C1`` (1 μF, marking \"105\"), ``C2`` and ``C3`` (10 μF, marking \"106\")"
+
+#: ../../assembly/instructions.rst:86
+msgid "**Припаяйте 6-мм тактильні кнопки**:"
+msgstr "**Solder 6 mm tactile buttons**:"
+
+#: ../../assembly/instructions.rst:88
+msgid "``SW9`` (Select)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:89
+msgid "``SW10`` (Start)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:90
+msgid "``SW12`` (Reset)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:92
+msgid "**Припаяйте модуль SD-карти** ``J3``."
+msgstr "**Solder the SD-card module** ``J3``."
+
+#: ../../assembly/instructions.rst:94
+msgid "Як і модуль USB-C, модуль SD-карти можна припаяти двома способами."
+msgstr "Just like USB-C module, the SD-card module can be soldered in two different ways."
+
+#: ../../assembly/instructions.rst:96
+msgid ""
+"**Переконайтесь, що ви вставили модуль SD-карти вірно!** Металеве гніздо "
+"для SD-карти повинне знаходитися **зовні** плати!"
+msgstr "**Make sure that you have inserted the SD-card module correctly!** The metal socket for the SD-card must be **outside** of the board!"
+
+#: ../../assembly/instructions.rst:98
+msgid "**Припаяйте 8 12-мм кнопок**:"
+msgstr "**Solder all the 8 of the 12 mm buttons**:"
+
+#: ../../assembly/instructions.rst:100
+msgid "``SW1`` (Up)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:101
+msgid "``SW2`` (Down)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:102
+msgid "``SW3`` (Left)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:103
+msgid "``SW4`` (Right)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:104
+msgid "``SW5`` (A)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:105
+msgid "``SW6`` (B)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:106
+msgid "``SW7`` (C)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:107
+msgid "``SW8`` (D)"
+msgstr ""
+
+#: ../../assembly/instructions.rst:109
+msgid ""
+"**Якщо ви збираєте комплектацію зі звуком, припаяйте** :term:`ЦАП`-модуль"
+" ``U4`` (MAX98357A)."
+msgstr "**If you are assembling the configuraiton with audio, solder the** :term:`DAC`-module ``U4`` (MAX98357A)."
+
+#: ../../assembly/instructions.rst:111
+msgid ""
+"**Якщо ви плануєте використовувати навушники,** спершу припаяйте роз'єм "
+"для навушників ``J6`` до плати. Після цього обов'язково припаяйте всі 9 "
+"контактів модуля MAX98357A."
+msgstr "**If you are going to use headphones,** first solder the headphones socket ``J6`` to the board. After this, you must solder all the 9 pins of the MAX98357A module."
+
+#: ../../assembly/instructions.rst:112
+msgid ""
+"**Якщо ж ви хочете використовувати власний динамік,** вам достатньо "
+"припаяти лише 7 основних контактів, а контакти динаміка припаяти "
+"безпосередньо до пінів (+) та (-) модуля."
+msgstr "**If you want to use a speaker, it's sufficient to solder only 7 main pins, and to solder the speaker pins to the (+) and (-) pins of the module."
+
+#: ../../assembly/instructions.rst:114
+msgid "**Припаяйте п'єзоелектричний динамік** ``BZ1``."
+msgstr "**Solder the buzzer** ``BZ1``."
+
+#: ../../assembly/instructions.rst:116
+msgid ""
+"Він дозволяє відтворювати примітивні звуки. Він працює окремо від "
+":term:`ЦАП`-модуля, тому ви можете використовувати його навіть якщо не "
+"паяєте :term:`ЦАП`-модуль."
+msgstr "It enables the reproduction of trivial sounds. It works separately from :term:`DAC` module, so you can use it even if you're not soldering :term:`DAC` module."
+
+#: ../../assembly/instructions.rst:118
+msgid "**Припаяйте роз'єм дисплея та роз'єм розширення:**"
+msgstr "**Solder the display socket and the extension sockets:**"
+
+#: ../../assembly/instructions.rst:120
+msgid "``U2`` (роз'єм дисплея типу \"мама\")"
+msgstr "``U2`` (female display socket)"
+
+#: ../../assembly/instructions.rst:121
+msgid "``J2`` (роз'єм розширення типу \"тато\")"
+msgstr "``J2`` (male extension socket)"
+
+#: ../../assembly/instructions.rst:123
+msgid "**Припаяйте вимикач живлення** ``SW11``."
+msgstr "**Solder the power switch** ``SW11``."
+
+#: ../../assembly/instructions.rst:125
+msgid ""
+"Вітаємо, ваша плата готова до використання! Тепер вам залишається лише "
+"завантажити програмне забезпечення на ESP32-S3. Для цього читайте "
+"наступний розділ - :ref:`programming`."
+msgstr "Congratulations, your board is ready to use! Now all you have to do is to flash the firmware onto ESP32-S3. For this, read the next chapter - :ref:`programming`."
+

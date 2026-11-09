@@ -6,3 +6,4 @@ sphinx-rtd-theme==3.0.2
 sphinx-toolbox==3.5.0
 sphinxcontrib-images==0.9.4
 sphinxcontrib-luadomain==1.1.2
+setuptools<=80.10.2 # pkg_resources removed, breaks current sphinx
